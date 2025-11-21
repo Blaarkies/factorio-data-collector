@@ -1,8 +1,5 @@
-import { ValidProp } from '../type';
 import { parse } from 'luaparse';
 import {
-  Expression,
-  ExpressionValue,
   isBinaryExpression,
   isBooleanLiteralValue,
   isIdentifierValue,
@@ -11,9 +8,14 @@ import {
   isTableConstructorExpression,
   isTableKeyString,
   isTableValue, isUnaryExpression,
+} from './type.ts';
+import type { ValidProp } from '../type.ts';
+import type {
+  Expression,
+  ExpressionValue,
   LexLocationRange,
   TableKeyString
-} from './type';
+} from './type.ts';
 
 type Value = boolean | string | number | object;
 
@@ -61,7 +63,7 @@ function parseExpression(
       : expression.value.fields;
     const filteredFields = filterKeys
       ? fields.filter(f => isTableKeyString(f)
-        ? filterKeys.includes((<TableKeyString>f).key.name as ValidProp)
+        ? filterKeys.includes((f as TableKeyString).key.name as ValidProp)
         : true)
       : fields;
 
@@ -70,7 +72,7 @@ function parseExpression(
         .map(f => parseExpression(f, filterKeys, evaluatorFn));
       let isEntries = Array.isArray(entriesOrObject[0]);
       let r = isEntries
-        ? Object.fromEntries(<[]>entriesOrObject)
+        ? Object.fromEntries(entriesOrObject as [])
         : entriesOrObject;
       return r;
     }

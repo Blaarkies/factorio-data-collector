@@ -1,4 +1,4 @@
-import { ValidProp } from '../type';
+import type { ValidProp } from '../type.ts';
 
 // Item properties to keep
 export const requiredItemProperties: ValidProp[] = [

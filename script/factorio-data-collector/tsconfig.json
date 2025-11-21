@@ -1,9 +1,13 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "skipLibCheck": true
+    "module": "CommonJS",
+    "outDir": "../dist-data-collector",
+    "esModuleInterop": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "noEmitOnError": false,
+    "allowImportingTsExtensions": true
   },
-  "include": [
-    "main.ts"
-  ]
+  "include": ["main.ts"]
 }
