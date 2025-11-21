@@ -1,0 +1,20 @@
+.icon-list {
+  display: flex;
+  justify-self: right;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  width: calc(46px * 7 + 8px * 6 + 20px);
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.hint {
+  font-size: var(--font-size-1);
+}
+
+.payload-container {
+  background: oklch(.9 0 0);
+  padding: 8px 10px;
+  margin-block: 12px;
+}

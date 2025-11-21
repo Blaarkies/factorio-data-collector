@@ -1,8 +1,5 @@
-import { ValidProp } from '../type';
 import { parse } from 'luaparse';
 import {
-  Expression,
-  ExpressionValue,
   isBinaryExpression,
   isBooleanLiteralValue,
   isIdentifierValue,
@@ -11,9 +8,13 @@ import {
   isTableConstructorExpression,
   isTableKeyString,
   isTableValue, isUnaryExpression,
-  LexLocationRange,
+} from './type-lua.ts';
+import type { ValidProp } from './type-data.ts';
+import type {
+  Expression,
+  ExpressionValue,
   TableKeyString
-} from './type';
+} from './type-lua.ts';
 
 type Value = boolean | string | number | object;
 
@@ -49,7 +50,7 @@ function parseValue(expression: ExpressionValue): unknown {
 
 type EvaluatorFn = (entry: [ValidProp, string]) => [ValidProp, string | number]
 
-function parseExpression(
+export function parseExpression(
   expression: Expression,
   filterKeys?: ValidProp[],
   evaluatorFn?: EvaluatorFn,
@@ -61,7 +62,7 @@ function parseExpression(
       : expression.value.fields;
     const filteredFields = filterKeys
       ? fields.filter(f => isTableKeyString(f)
-        ? filterKeys.includes((<TableKeyString>f).key.name as ValidProp)
+        ? filterKeys.includes((f as TableKeyString).key.name as ValidProp)
         : true)
       : fields;
 
@@ -70,7 +71,7 @@ function parseExpression(
         .map(f => parseExpression(f, filterKeys, evaluatorFn));
       let isEntries = Array.isArray(entriesOrObject[0]);
       let r = isEntries
-        ? Object.fromEntries(<[]>entriesOrObject)
+        ? Object.fromEntries(entriesOrObject as [])
         : entriesOrObject;
       return r;
     }
@@ -98,20 +99,15 @@ function parseExpression(
     return [expression.key.name, parsedValue];
   }
 
-  return {error: 'ERROR' + JSON.stringify(expression)};
+  return parseValue(expression);
 }
 
-export function parseLua(
+export function parseLuaItemsOrRecipes(
   contents: string,
   filterKeys?: ValidProp[],
   evaluatorFn?: EvaluatorFn,
 ): object[] {
-  let expressionContents = contents.split(/data:extend\s?\(/g).at(-1);
-  let end = expressionContents.lastIndexOf(')');
-  let listSection = expressionContents.slice(0, end);
-  let fragileContents = `ignoreThis=${listSection}`;
-
-  let ast = parse(fragileContents, {locations: true});
+  let ast = parse(contents, {locations: true});
 
   let dataTable = ast.body[0].init[0];
 
@@ -128,31 +124,7 @@ export function parseLua(
   return items;
 }
 
-
-
-
-function processRecipes() {
-
-}
-
-
-let latestContents: string;
-
-function setContents(contents: string) {
-  latestContents = contents;
-}
-
-function getContentsAt(location: LexLocationRange): string {
-  let {start, end} = location;
-  let sections = latestContents.slice(-1 + start.line, end.line);
-
-  if (sections.length === 1) {
-    return sections[0].slice(start.column, end.column);
-  }
-
-  let first = sections[0].slice(start.column);
-  let last = sections.at(-1).slice(0, end.column);
-
-  let raw = [first, ...sections.slice(1, -1), last].join('\n');
-  return raw;
+export function parseLua(contents: string): object[] {
+  let ast = parse(contents, {locations: true});
+  return ast;
 }

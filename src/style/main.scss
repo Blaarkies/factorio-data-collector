@@ -1,8 +1,10 @@
+@forward '@angular/cdk/overlay-prebuilt.css';
+@forward './variable-values';
 @forward './fix';
-
-//  @import '@angular/cdk/overlay-prebuilt.css';
 
 html, body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'sans-serif', system-ui;
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-3);
 }

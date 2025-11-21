@@ -1,0 +1,7435 @@
+[
+  {
+    "type": "item",
+    "name": "stone-brick",
+    "subgroup": "terrain",
+    "icon": "__base__/graphics/icons/stone-brick.png",
+    "stackSize": 100,
+    "rocketCapacity": 500,
+    "alternatives": [
+      {
+        "name": "stone-brick",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "stone",
+            "amount": 2,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "wood",
+    "subgroup": "raw-resource",
+    "icon": "__base__/graphics/icons/wood.png",
+    "stackSize": 100,
+    "rocketCapacity": 500,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "coal",
+    "subgroup": "raw-resource",
+    "icon": "__base__/graphics/icons/coal.png",
+    "stackSize": 50,
+    "rocketCapacity": 500,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "stone",
+    "subgroup": "raw-resource",
+    "icon": "__base__/graphics/icons/stone.png",
+    "stackSize": 50,
+    "rocketCapacity": 500,
+    "alternatives": [
+      {
+        "name": "scrap-recycling",
+        "yield": 0.04,
+        "ingredients": [
+          {
+            "name": "scrap",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "iron-ore",
+    "subgroup": "raw-resource",
+    "icon": "__base__/graphics/icons/iron-ore.png",
+    "stackSize": 50,
+    "rocketCapacity": 500,
+    "alternatives": [
+      {
+        "name": "metallic-asteroid-crushing",
+        "yield": 20,
+        "ingredients": [
+          {
+            "name": "metallic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "advanced-metallic-asteroid-crushing",
+        "yield": 10,
+        "ingredients": [
+          {
+            "name": "metallic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "copper-ore",
+    "subgroup": "raw-resource",
+    "icon": "__base__/graphics/icons/copper-ore.png",
+    "stackSize": 50,
+    "rocketCapacity": 500,
+    "alternatives": [
+      {
+        "name": "advanced-metallic-asteroid-crushing",
+        "yield": 4,
+        "ingredients": [
+          {
+            "name": "metallic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "iron-plate",
+    "subgroup": "raw-material",
+    "icon": "__base__/graphics/icons/iron-plate.png",
+    "stackSize": 100,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "iron-plate",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-ore",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "copper-plate",
+    "subgroup": "raw-material",
+    "icon": "__base__/graphics/icons/copper-plate.png",
+    "stackSize": 100,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "copper-plate",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "copper-ore",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "copper-cable",
+    "subgroup": "intermediate-product",
+    "icon": "__base__/graphics/icons/copper-cable.png",
+    "stackSize": 200,
+    "rocketCapacity": 4000,
+    "alternatives": [
+      {
+        "name": "copper-cable",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "copper-plate",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "scrap-recycling",
+        "yield": 0.03,
+        "ingredients": [
+          {
+            "name": "scrap",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "iron-stick",
+    "subgroup": "intermediate-product",
+    "icon": "__base__/graphics/icons/iron-stick.png",
+    "stackSize": 100,
+    "rocketCapacity": 2000,
+    "alternatives": [
+      {
+        "name": "iron-stick",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "iron-gear-wheel",
+    "subgroup": "intermediate-product",
+    "icon": "__base__/graphics/icons/iron-gear-wheel.png",
+    "stackSize": 100,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "iron-gear-wheel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 2,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "scrap-recycling",
+        "yield": 0.2,
+        "ingredients": [
+          {
+            "name": "scrap",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "electronic-circuit",
+    "subgroup": "intermediate-product",
+    "icon": "__base__/graphics/icons/electronic-circuit.png",
+    "stackSize": 200,
+    "rocketCapacity": 2000,
+    "alternatives": [
+      {
+        "name": "electronic-circuit",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 1,
+            "weightRatio": 0.5714285714285714
+          },
+          {
+            "name": "copper-cable",
+            "amount": 3,
+            "weightRatio": 0.42857142857142855
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "wooden-chest",
+    "subgroup": "storage",
+    "icon": "__base__/graphics/icons/wooden-chest.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "wooden-chest",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "wood",
+            "amount": 2,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "stone-furnace",
+    "subgroup": "smelting-machine",
+    "icon": "__base__/graphics/icons/stone-furnace.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "stone-furnace",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "stone",
+            "amount": 5,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "burner-mining-drill",
+    "subgroup": "extraction-machine",
+    "icon": "__base__/graphics/icons/burner-mining-drill.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "burner-mining-drill",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-gear-wheel",
+            "amount": 3,
+            "weightRatio": 0.11538461538461539
+          },
+          {
+            "name": "stone-furnace",
+            "amount": 1,
+            "weightRatio": 0.7692307692307693
+          },
+          {
+            "name": "iron-plate",
+            "amount": 3,
+            "weightRatio": 0.11538461538461539
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "electric-mining-drill",
+    "subgroup": "extraction-machine",
+    "icon": "__base__/graphics/icons/electric-mining-drill.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "electric-mining-drill",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 3,
+            "weightRatio": 0.09090909090909091
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 5,
+            "weightRatio": 0.30303030303030304
+          },
+          {
+            "name": "iron-plate",
+            "amount": 10,
+            "weightRatio": 0.6060606060606061
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "burner-inserter",
+    "subgroup": "inserter",
+    "icon": "__base__/graphics/icons/burner-inserter.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "burner-inserter",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 1,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 1,
+            "weightRatio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "inserter",
+    "subgroup": "inserter",
+    "icon": "__base__/graphics/icons/inserter.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "inserter",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 1,
+            "weightRatio": 0.2
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 1,
+            "weightRatio": 0.4
+          },
+          {
+            "name": "iron-plate",
+            "amount": 1,
+            "weightRatio": 0.4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "fast-inserter",
+    "subgroup": "inserter",
+    "icon": "__base__/graphics/icons/fast-inserter.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "fast-inserter",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 2,
+            "weightRatio": 0.043478260869565216
+          },
+          {
+            "name": "iron-plate",
+            "amount": 2,
+            "weightRatio": 0.08695652173913043
+          },
+          {
+            "name": "inserter",
+            "amount": 1,
+            "weightRatio": 0.8695652173913043
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "long-handed-inserter",
+    "subgroup": "inserter",
+    "icon": "__base__/graphics/icons/long-handed-inserter.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "long-handed-inserter",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-gear-wheel",
+            "amount": 1,
+            "weightRatio": 0.045454545454545456
+          },
+          {
+            "name": "iron-plate",
+            "amount": 1,
+            "weightRatio": 0.045454545454545456
+          },
+          {
+            "name": "inserter",
+            "amount": 1,
+            "weightRatio": 0.9090909090909091
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "offshore-pump",
+    "subgroup": "extraction-machine",
+    "icon": "__base__/graphics/icons/offshore-pump.png",
+    "stackSize": 20,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "offshore-pump",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "pipe",
+            "amount": 3,
+            "weightRatio": 0.8823529411764706
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 2,
+            "weightRatio": 0.11764705882352941
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "pipe",
+    "subgroup": "energy-pipe-distribution",
+    "icon": "__base__/graphics/icons/pipe.png",
+    "stackSize": 100,
+    "rocketCapacity": 200,
+    "alternatives": [
+      {
+        "name": "pipe",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "boiler",
+    "subgroup": "energy",
+    "icon": "__base__/graphics/icons/boiler.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "boiler",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "stone-furnace",
+            "amount": 1,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "pipe",
+            "amount": 4,
+            "weightRatio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "steam-engine",
+    "subgroup": "energy",
+    "icon": "__base__/graphics/icons/steam-engine.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "steam-engine",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-gear-wheel",
+            "amount": 8,
+            "weightRatio": 0.18604651162790697
+          },
+          {
+            "name": "pipe",
+            "amount": 5,
+            "weightRatio": 0.5813953488372093
+          },
+          {
+            "name": "iron-plate",
+            "amount": 10,
+            "weightRatio": 0.23255813953488372
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "small-electric-pole",
+    "subgroup": "energy-pipe-distribution",
+    "icon": "__base__/graphics/icons/small-electric-pole.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "small-electric-pole",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "wood",
+            "amount": 1,
+            "weightRatio": 0.8
+          },
+          {
+            "name": "copper-cable",
+            "amount": 2,
+            "weightRatio": 0.2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "radar",
+    "subgroup": "defensive-structure",
+    "icon": "__base__/graphics/icons/radar.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "radar",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 5,
+            "weightRatio": 0.14285714285714285
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 5,
+            "weightRatio": 0.2857142857142857
+          },
+          {
+            "name": "iron-plate",
+            "amount": 10,
+            "weightRatio": 0.5714285714285714
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "small-lamp",
+    "subgroup": "circuit-network",
+    "icon": "__base__/graphics/icons/small-lamp.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "small-lamp",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 1,
+            "weightRatio": 0.2222222222222222
+          },
+          {
+            "name": "copper-cable",
+            "amount": 3,
+            "weightRatio": 0.3333333333333333
+          },
+          {
+            "name": "iron-plate",
+            "amount": 1,
+            "weightRatio": 0.4444444444444444
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "pipe-to-ground",
+    "subgroup": "energy-pipe-distribution",
+    "icon": "__base__/graphics/icons/pipe-to-ground.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "pipe-to-ground",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "pipe",
+            "amount": 10,
+            "weightRatio": 0.9090909090909091
+          },
+          {
+            "name": "iron-plate",
+            "amount": 5,
+            "weightRatio": 0.09090909090909091
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "assembling-machine-1",
+    "subgroup": "production-machine",
+    "icon": "__base__/graphics/icons/assembling-machine-1.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "assembling-machine-1",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 3,
+            "weightRatio": 0.0967741935483871
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 5,
+            "weightRatio": 0.3225806451612903
+          },
+          {
+            "name": "iron-plate",
+            "amount": 9,
+            "weightRatio": 0.5806451612903226
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "assembling-machine-2",
+    "subgroup": "production-machine",
+    "icon": "__base__/graphics/icons/assembling-machine-2.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "assembling-machine-2",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 2,
+            "weightRatio": 0.15873015873015872
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 3,
+            "weightRatio": 0.047619047619047616
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 5,
+            "weightRatio": 0.15873015873015872
+          },
+          {
+            "name": "assembling-machine-1",
+            "amount": 1,
+            "weightRatio": 0.6349206349206349
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "red-wire",
+    "subgroup": "spawnables",
+    "icon": "__base__/graphics/icons/shortcut-toolbar/mip/new-red-wire-x56.png",
+    "stackSize": 1,
+    "rocketCapacity": 10000,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "green-wire",
+    "subgroup": "spawnables",
+    "icon": "__base__/graphics/icons/shortcut-toolbar/mip/new-green-wire-x56.png",
+    "stackSize": 1,
+    "rocketCapacity": 10000,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "copper-wire",
+    "subgroup": "spawnables",
+    "icon": "__base__/graphics/icons/shortcut-toolbar/mip/new-copper-wire-x56.png",
+    "stackSize": 1,
+    "rocketCapacity": 10000,
+    "alternatives": []
+  },
+  {
+    "type": "capsule",
+    "name": "raw-fish",
+    "subgroup": "raw-resource",
+    "icon": "__base__/graphics/icons/fish.png",
+    "stackSize": 100,
+    "rocketCapacity": 300,
+    "alternatives": []
+  },
+  {
+    "type": "repair-tool",
+    "name": "repair-pack",
+    "subgroup": "tool",
+    "icon": "__base__/graphics/icons/repair-pack.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "repair-pack",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 2,
+            "weightRatio": 0.3333333333333333
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 2,
+            "weightRatio": 0.6666666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "stone-wall",
+    "subgroup": "defensive-structure",
+    "icon": "__base__/graphics/icons/wall.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "stone-wall",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "stone-brick",
+            "amount": 5,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "lab",
+    "subgroup": "production-machine",
+    "icon": "__base__/graphics/icons/lab.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "lab",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 10,
+            "weightRatio": 0.09090909090909091
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 10,
+            "weightRatio": 0.18181818181818182
+          },
+          {
+            "name": "transport-belt",
+            "amount": 4,
+            "weightRatio": 0.7272727272727273
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "blueprint",
+    "name": "blueprint",
+    "subgroup": "tool",
+    "icon": "__base__/graphics/icons/blueprint.png",
+    "stackSize": 1,
+    "rocketCapacity": 10000,
+    "alternatives": []
+  },
+  {
+    "type": "tool",
+    "name": "automation-science-pack",
+    "subgroup": "science-pack",
+    "icon": "__base__/graphics/icons/automation-science-pack.png",
+    "stackSize": 200,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "automation-science-pack",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "copper-plate",
+            "amount": 1,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 1,
+            "weightRatio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "tool",
+    "name": "logistic-science-pack",
+    "subgroup": "science-pack",
+    "icon": "__base__/graphics/icons/logistic-science-pack.png",
+    "stackSize": 200,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "logistic-science-pack",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "inserter",
+            "amount": 1,
+            "weightRatio": 0.6666666666666666
+          },
+          {
+            "name": "transport-belt",
+            "amount": 1,
+            "weightRatio": 0.3333333333333333
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "steel-plate",
+    "subgroup": "raw-material",
+    "icon": "__base__/graphics/icons/steel-plate.png",
+    "stackSize": 100,
+    "rocketCapacity": 400,
+    "alternatives": [
+      {
+        "name": "steel-plate",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 5,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "scrap-recycling",
+        "yield": 0.04,
+        "ingredients": [
+          {
+            "name": "scrap",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item-with-entity-data",
+    "name": "car",
+    "subgroup": "transport",
+    "icon": "__base__/graphics/icons/car.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "car",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "engine-unit",
+            "amount": 8,
+            "weightRatio": 0.38095238095238093
+          },
+          {
+            "name": "iron-plate",
+            "amount": 20,
+            "weightRatio": 0.38095238095238093
+          },
+          {
+            "name": "steel-plate",
+            "amount": 5,
+            "weightRatio": 0.23809523809523808
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "engine-unit",
+    "subgroup": "intermediate-product",
+    "icon": "__base__/graphics/icons/engine-unit.png",
+    "stackSize": 50,
+    "rocketCapacity": 400,
+    "alternatives": [
+      {
+        "name": "engine-unit",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 1,
+            "weightRatio": 0.18518518518518517
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 1,
+            "weightRatio": 0.07407407407407407
+          },
+          {
+            "name": "pipe",
+            "amount": 2,
+            "weightRatio": 0.7407407407407407
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "electric-furnace",
+    "subgroup": "smelting-machine",
+    "icon": "__base__/graphics/icons/electric-furnace.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "electric-furnace",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 10,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.1
+          },
+          {
+            "name": "stone-brick",
+            "amount": 10,
+            "weightRatio": 0.4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "solid-fuel",
+    "subgroup": "raw-material",
+    "icon": "__base__/graphics/icons/solid-fuel.png",
+    "stackSize": 50,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "scrap-recycling",
+        "yield": 0.07,
+        "ingredients": [
+          {
+            "name": "scrap",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "rocket-fuel",
+    "subgroup": "intermediate-product",
+    "icon": "__base__/graphics/icons/rocket-fuel.png",
+    "stackSize": 20,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "iron-chest",
+    "subgroup": "storage",
+    "icon": "__base__/graphics/icons/iron-chest.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "iron-chest",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 8,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "big-electric-pole",
+    "subgroup": "energy-pipe-distribution",
+    "icon": "__base__/graphics/icons/big-electric-pole.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "big-electric-pole",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-stick",
+            "amount": 8,
+            "weightRatio": 0.22857142857142856
+          },
+          {
+            "name": "steel-plate",
+            "amount": 5,
+            "weightRatio": 0.7142857142857143
+          },
+          {
+            "name": "copper-cable",
+            "amount": 4,
+            "weightRatio": 0.05714285714285714
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "medium-electric-pole",
+    "subgroup": "energy-pipe-distribution",
+    "icon": "__base__/graphics/icons/medium-electric-pole.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "medium-electric-pole",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-stick",
+            "amount": 4,
+            "weightRatio": 0.26666666666666666
+          },
+          {
+            "name": "steel-plate",
+            "amount": 2,
+            "weightRatio": 0.6666666666666666
+          },
+          {
+            "name": "copper-cable",
+            "amount": 2,
+            "weightRatio": 0.06666666666666667
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "capsule",
+    "name": "grenade",
+    "subgroup": "capsule",
+    "icon": "__base__/graphics/icons/grenade.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "grenade",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 5,
+            "weightRatio": 0.2
+          },
+          {
+            "name": "coal",
+            "amount": 10,
+            "weightRatio": 0.8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "steel-furnace",
+    "subgroup": "smelting-machine",
+    "icon": "__base__/graphics/icons/steel-furnace.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "steel-furnace",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 6,
+            "weightRatio": 0.42857142857142855
+          },
+          {
+            "name": "stone-brick",
+            "amount": 10,
+            "weightRatio": 0.5714285714285714
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "gate",
+    "subgroup": "defensive-structure",
+    "icon": "__base__/graphics/icons/gate.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "gate",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "stone-wall",
+            "amount": 1,
+            "weightRatio": 0.625
+          },
+          {
+            "name": "steel-plate",
+            "amount": 2,
+            "weightRatio": 0.3125
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 2,
+            "weightRatio": 0.0625
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "steel-chest",
+    "subgroup": "storage",
+    "icon": "__base__/graphics/icons/steel-chest.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "steel-chest",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 8,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "solar-panel",
+    "subgroup": "energy",
+    "icon": "__base__/graphics/icons/solar-panel.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "solar-panel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 5,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 15,
+            "weightRatio": 0.3
+          },
+          {
+            "name": "copper-plate",
+            "amount": 5,
+            "weightRatio": 0.2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item-with-entity-data",
+    "name": "locomotive",
+    "subgroup": "train-transport",
+    "icon": "__base__/graphics/icons/locomotive.png",
+    "stackSize": 5,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "locomotive",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "engine-unit",
+            "amount": 20,
+            "weightRatio": 0.38461538461538464
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 10,
+            "weightRatio": 0.038461538461538464
+          },
+          {
+            "name": "steel-plate",
+            "amount": 30,
+            "weightRatio": 0.5769230769230769
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item-with-entity-data",
+    "name": "cargo-wagon",
+    "subgroup": "train-transport",
+    "icon": "__base__/graphics/icons/cargo-wagon.png",
+    "stackSize": 5,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "cargo-wagon",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-gear-wheel",
+            "amount": 10,
+            "weightRatio": 0.125
+          },
+          {
+            "name": "iron-plate",
+            "amount": 20,
+            "weightRatio": 0.25
+          },
+          {
+            "name": "steel-plate",
+            "amount": 20,
+            "weightRatio": 0.625
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "rail-planner",
+    "name": "rail",
+    "subgroup": "train-transport",
+    "icon": "__base__/graphics/icons/rail.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "rail",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "stone",
+            "amount": 1,
+            "weightRatio": 0.4
+          },
+          {
+            "name": "iron-stick",
+            "amount": 1,
+            "weightRatio": 0.1
+          },
+          {
+            "name": "steel-plate",
+            "amount": 1,
+            "weightRatio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "train-stop",
+    "subgroup": "train-transport",
+    "icon": "__base__/graphics/icons/train-stop.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "train-stop",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 5,
+            "weightRatio": 0.13157894736842105
+          },
+          {
+            "name": "iron-plate",
+            "amount": 6,
+            "weightRatio": 0.3157894736842105
+          },
+          {
+            "name": "iron-stick",
+            "amount": 6,
+            "weightRatio": 0.15789473684210525
+          },
+          {
+            "name": "steel-plate",
+            "amount": 3,
+            "weightRatio": 0.39473684210526316
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "rail-signal",
+    "subgroup": "train-transport",
+    "icon": "__base__/graphics/icons/rail-signal.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "rail-signal",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 1,
+            "weightRatio": 0.09090909090909091
+          },
+          {
+            "name": "iron-plate",
+            "amount": 5,
+            "weightRatio": 0.9090909090909091
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "rail-chain-signal",
+    "subgroup": "train-transport",
+    "icon": "__base__/graphics/icons/rail-chain-signal.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "rail-chain-signal",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 1,
+            "weightRatio": 0.09090909090909091
+          },
+          {
+            "name": "iron-plate",
+            "amount": 5,
+            "weightRatio": 0.9090909090909091
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "concrete",
+    "subgroup": "terrain",
+    "icon": "__base__/graphics/icons/concrete.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "scrap-recycling",
+        "yield": 0.06,
+        "ingredients": [
+          {
+            "name": "scrap",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "refined-concrete",
+    "subgroup": "terrain",
+    "icon": "__base__/graphics/icons/refined-concrete.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "hazard-concrete",
+    "subgroup": "terrain",
+    "icon": "__base__/graphics/icons/hazard-concrete.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "hazard-concrete",
+        "yield": 10,
+        "ingredients": [
+          {
+            "name": "concrete",
+            "amount": 10,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "refined-hazard-concrete",
+    "subgroup": "terrain",
+    "icon": "__base__/graphics/icons/refined-hazard-concrete.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "refined-hazard-concrete",
+        "yield": 10,
+        "ingredients": [
+          {
+            "name": "refined-concrete",
+            "amount": 10,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "landfill",
+    "subgroup": "terrain",
+    "icon": "__base__/graphics/icons/landfill.png",
+    "stackSize": 100,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "landfill",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "stone",
+            "amount": 50,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "accumulator",
+    "subgroup": "energy",
+    "icon": "__base__/graphics/icons/accumulator.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "accumulator",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 2,
+            "weightRatio": 0.13793103448275862
+          },
+          {
+            "name": "battery",
+            "amount": 5,
+            "weightRatio": 0.8620689655172413
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "uranium-ore",
+    "subgroup": "raw-resource",
+    "icon": "__base__/graphics/icons/uranium-ore.png",
+    "stackSize": 50,
+    "rocketCapacity": 200,
+    "alternatives": []
+  },
+  {
+    "type": "capsule",
+    "name": "defender-capsule",
+    "subgroup": "capsule",
+    "icon": "__base__/graphics/icons/defender-capsule.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "defender-capsule",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "piercing-rounds-magazine",
+            "amount": 3,
+            "weightRatio": 0.9302325581395349
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 3,
+            "weightRatio": 0.023255813953488372
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 3,
+            "weightRatio": 0.046511627906976744
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "transport-belt",
+    "subgroup": "belt",
+    "icon": "__base__/graphics/icons/transport-belt.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "transport-belt",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 1,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 1,
+            "weightRatio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "fast-transport-belt",
+    "subgroup": "belt",
+    "icon": "__base__/graphics/icons/fast-transport-belt.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "fast-transport-belt",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-gear-wheel",
+            "amount": 5,
+            "weightRatio": 0.3333333333333333
+          },
+          {
+            "name": "transport-belt",
+            "amount": 1,
+            "weightRatio": 0.6666666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "express-transport-belt",
+    "subgroup": "belt",
+    "icon": "__base__/graphics/icons/express-transport-belt.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "bulk-inserter",
+    "subgroup": "inserter",
+    "icon": "__base__/graphics/icons/bulk-inserter.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "bulk-inserter",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-gear-wheel",
+            "amount": 15,
+            "weightRatio": 0.3448275862068966
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 15,
+            "weightRatio": 0.1724137931034483
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 1,
+            "weightRatio": 0.022988505747126436
+          },
+          {
+            "name": "fast-inserter",
+            "amount": 1,
+            "weightRatio": 0.45977011494252873
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "assembling-machine-3",
+    "subgroup": "production-machine",
+    "icon": "__base__/graphics/icons/assembling-machine-3.png",
+    "stackSize": 50,
+    "rocketCapacity": 25,
+    "alternatives": [
+      {
+        "name": "assembling-machine-3",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "assembling-machine-2",
+            "amount": 2,
+            "weightRatio": 0.3333333333333333
+          },
+          {
+            "name": "speed-module",
+            "amount": 4,
+            "weightRatio": 0.6666666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item-with-entity-data",
+    "name": "fluid-wagon",
+    "subgroup": "train-transport",
+    "icon": "__base__/graphics/icons/fluid-wagon.png",
+    "stackSize": 5,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "fluid-wagon",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-gear-wheel",
+            "amount": 10,
+            "weightRatio": 0.09090909090909091
+          },
+          {
+            "name": "steel-plate",
+            "amount": 16,
+            "weightRatio": 0.36363636363636365
+          },
+          {
+            "name": "pipe",
+            "amount": 8,
+            "weightRatio": 0.36363636363636365
+          },
+          {
+            "name": "storage-tank",
+            "amount": 1,
+            "weightRatio": 0.18181818181818182
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item-with-entity-data",
+    "name": "artillery-wagon",
+    "subgroup": "train-transport",
+    "icon": "__base__/graphics/icons/artillery-wagon.png",
+    "stackSize": 5,
+    "rocketCapacity": 1.8808777429467085,
+    "alternatives": [
+      {
+        "name": "artillery-wagon",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "engine-unit",
+            "amount": 60,
+            "weightRatio": 0.14106583072100315
+          },
+          {
+            "name": "tungsten-plate",
+            "amount": 60,
+            "weightRatio": 0.22570532915360503
+          },
+          {
+            "name": "refined-concrete",
+            "amount": 60,
+            "weightRatio": 0.5642633228840126
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 40,
+            "weightRatio": 0.03761755485893417
+          },
+          {
+            "name": "processing-unit",
+            "amount": 10,
+            "weightRatio": 0.03134796238244514
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item-with-entity-data",
+    "name": "tank",
+    "subgroup": "transport",
+    "icon": "__base__/graphics/icons/tank.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "tank",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "engine-unit",
+            "amount": 32,
+            "weightRatio": 0.34782608695652173
+          },
+          {
+            "name": "steel-plate",
+            "amount": 50,
+            "weightRatio": 0.5434782608695652
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 15,
+            "weightRatio": 0.06521739130434782
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 10,
+            "weightRatio": 0.043478260869565216
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "tool",
+    "name": "chemical-science-pack",
+    "subgroup": "science-pack",
+    "icon": "__base__/graphics/icons/chemical-science-pack.png",
+    "stackSize": 200,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "chemical-science-pack",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "engine-unit",
+            "amount": 2,
+            "weightRatio": 0.5555555555555556
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 3,
+            "weightRatio": 0.3333333333333333
+          },
+          {
+            "name": "sulfur",
+            "amount": 1,
+            "weightRatio": 0.1111111111111111
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "tool",
+    "name": "military-science-pack",
+    "subgroup": "science-pack",
+    "icon": "__base__/graphics/icons/military-science-pack.png",
+    "stackSize": 200,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "military-science-pack",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "piercing-rounds-magazine",
+            "amount": 1,
+            "weightRatio": 0.4
+          },
+          {
+            "name": "grenade",
+            "amount": 1,
+            "weightRatio": 0.2
+          },
+          {
+            "name": "stone-wall",
+            "amount": 2,
+            "weightRatio": 0.4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "tool",
+    "name": "production-science-pack",
+    "subgroup": "science-pack",
+    "icon": "__base__/graphics/icons/production-science-pack.png",
+    "stackSize": 200,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "production-science-pack",
+        "yield": 3,
+        "ingredients": [
+          {
+            "name": "electric-furnace",
+            "amount": 1,
+            "weightRatio": 0.058823529411764705
+          },
+          {
+            "name": "productivity-module",
+            "amount": 1,
+            "weightRatio": 0.058823529411764705
+          },
+          {
+            "name": "rail",
+            "amount": 30,
+            "weightRatio": 0.8823529411764706
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "tool",
+    "name": "utility-science-pack",
+    "subgroup": "science-pack",
+    "icon": "__base__/graphics/icons/utility-science-pack.png",
+    "stackSize": 200,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "utility-science-pack",
+        "yield": 3,
+        "ingredients": [
+          {
+            "name": "low-density-structure",
+            "amount": 3,
+            "weightRatio": 0.5294117647058825
+          },
+          {
+            "name": "processing-unit",
+            "amount": 2,
+            "weightRatio": 0.23529411764705885
+          },
+          {
+            "name": "flying-robot-frame",
+            "amount": 1,
+            "weightRatio": 0.23529411764705885
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "tool",
+    "name": "space-science-pack",
+    "subgroup": "science-pack",
+    "icon": "__base__/graphics/icons/space-science-pack.png",
+    "stackSize": 2000,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "space-science-pack",
+        "yield": 5,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 2,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "carbon",
+            "amount": 1,
+            "weightRatio": 0.25
+          },
+          {
+            "name": "ice",
+            "amount": 1,
+            "weightRatio": 0.25
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "underground-belt",
+    "subgroup": "belt",
+    "icon": "__base__/graphics/icons/underground-belt.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "underground-belt",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 10,
+            "weightRatio": 0.16666666666666666
+          },
+          {
+            "name": "transport-belt",
+            "amount": 5,
+            "weightRatio": 0.8333333333333334
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "fast-underground-belt",
+    "subgroup": "belt",
+    "icon": "__base__/graphics/icons/fast-underground-belt.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "fast-underground-belt",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "iron-gear-wheel",
+            "amount": 40,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "underground-belt",
+            "amount": 2,
+            "weightRatio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "express-underground-belt",
+    "subgroup": "belt",
+    "icon": "__base__/graphics/icons/express-underground-belt.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "splitter",
+    "subgroup": "belt",
+    "icon": "__base__/graphics/icons/splitter.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "splitter",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 5,
+            "weightRatio": 0.05263157894736842
+          },
+          {
+            "name": "iron-plate",
+            "amount": 5,
+            "weightRatio": 0.10526315789473684
+          },
+          {
+            "name": "transport-belt",
+            "amount": 4,
+            "weightRatio": 0.8421052631578947
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "fast-splitter",
+    "subgroup": "belt",
+    "icon": "__base__/graphics/icons/fast-splitter.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "fast-splitter",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "splitter",
+            "amount": 1,
+            "weightRatio": 0.5714285714285714
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 10,
+            "weightRatio": 0.2857142857142857
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 10,
+            "weightRatio": 0.14285714285714285
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "express-splitter",
+    "subgroup": "belt",
+    "icon": "__base__/graphics/icons/express-splitter.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "advanced-circuit",
+    "subgroup": "intermediate-product",
+    "icon": "__base__/graphics/icons/advanced-circuit.png",
+    "stackSize": 200,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "advanced-circuit",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 2,
+            "weightRatio": 0.3333333333333333
+          },
+          {
+            "name": "plastic-bar",
+            "amount": 2,
+            "weightRatio": 0.3333333333333333
+          },
+          {
+            "name": "copper-cable",
+            "amount": 4,
+            "weightRatio": 0.3333333333333333
+          }
+        ]
+      },
+      {
+        "name": "scrap-recycling",
+        "yield": 0.03,
+        "ingredients": [
+          {
+            "name": "scrap",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "processing-unit",
+    "subgroup": "intermediate-product",
+    "icon": "__base__/graphics/icons/processing-unit.png",
+    "stackSize": 100,
+    "rocketCapacity": 300,
+    "alternatives": [
+      {
+        "name": "scrap-recycling",
+        "yield": 0.02,
+        "ingredients": [
+          {
+            "name": "scrap",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "logistic-robot",
+    "subgroup": "logistic-network",
+    "icon": "__base__/graphics/icons/logistic-robot.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "logistic-robot",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "flying-robot-frame",
+            "amount": 1,
+            "weightRatio": 0.7692307692307692
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 2,
+            "weightRatio": 0.23076923076923078
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "construction-robot",
+    "subgroup": "logistic-network",
+    "icon": "__base__/graphics/icons/construction-robot.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "construction-robot",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "flying-robot-frame",
+            "amount": 1,
+            "weightRatio": 0.8695652173913043
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 2,
+            "weightRatio": 0.13043478260869568
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "passive-provider-chest",
+    "subgroup": "logistic-network",
+    "icon": "__base__/graphics/icons/passive-provider-chest.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "passive-provider-chest",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-chest",
+            "amount": 1,
+            "weightRatio": 0.8888888888888888
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 3,
+            "weightRatio": 0.06666666666666667
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 1,
+            "weightRatio": 0.044444444444444446
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "active-provider-chest",
+    "subgroup": "logistic-network",
+    "icon": "__base__/graphics/icons/active-provider-chest.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "active-provider-chest",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-chest",
+            "amount": 1,
+            "weightRatio": 0.8888888888888888
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 3,
+            "weightRatio": 0.06666666666666667
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 1,
+            "weightRatio": 0.044444444444444446
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "storage-chest",
+    "subgroup": "logistic-network",
+    "icon": "__base__/graphics/icons/storage-chest.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "storage-chest",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-chest",
+            "amount": 1,
+            "weightRatio": 0.8888888888888888
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 3,
+            "weightRatio": 0.06666666666666667
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 1,
+            "weightRatio": 0.044444444444444446
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "buffer-chest",
+    "subgroup": "logistic-network",
+    "icon": "__base__/graphics/icons/buffer-chest.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "buffer-chest",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-chest",
+            "amount": 1,
+            "weightRatio": 0.8888888888888888
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 3,
+            "weightRatio": 0.06666666666666667
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 1,
+            "weightRatio": 0.044444444444444446
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "requester-chest",
+    "subgroup": "logistic-network",
+    "icon": "__base__/graphics/icons/requester-chest.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "requester-chest",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-chest",
+            "amount": 1,
+            "weightRatio": 0.8888888888888888
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 3,
+            "weightRatio": 0.06666666666666667
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 1,
+            "weightRatio": 0.044444444444444446
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "rocket-silo",
+    "subgroup": "space-related",
+    "icon": "__base__/graphics/icons/rocket-silo.png",
+    "stackSize": 1,
+    "rocketCapacity": 0.1,
+    "alternatives": [
+      {
+        "name": "rocket-silo",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 1000,
+            "weightRatio": 0.17647058823529413
+          },
+          {
+            "name": "concrete",
+            "amount": 1000,
+            "weightRatio": 0.7058823529411765
+          },
+          {
+            "name": "pipe",
+            "amount": 100,
+            "weightRatio": 0.03529411764705882
+          },
+          {
+            "name": "processing-unit",
+            "amount": 200,
+            "weightRatio": 0.047058823529411764
+          },
+          {
+            "name": "electric-engine-unit",
+            "amount": 200,
+            "weightRatio": 0.03529411764705882
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "cargo-landing-pad",
+    "subgroup": "space-related",
+    "icon": "__base__/graphics/icons/cargo-landing-pad.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "cargo-landing-pad",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "concrete",
+            "amount": 200,
+            "weightRatio": 0.9542743538767396
+          },
+          {
+            "name": "steel-plate",
+            "amount": 25,
+            "weightRatio": 0.029821073558648114
+          },
+          {
+            "name": "processing-unit",
+            "amount": 10,
+            "weightRatio": 0.015904572564612324
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "roboport",
+    "subgroup": "logistic-network",
+    "icon": "__base__/graphics/icons/roboport.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "roboport",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 45,
+            "weightRatio": 0.5555555555555556
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 45,
+            "weightRatio": 0.2222222222222222
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 45,
+            "weightRatio": 0.2222222222222222
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "substation",
+    "subgroup": "energy-pipe-distribution",
+    "icon": "__base__/graphics/icons/substation.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "substation",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 10,
+            "weightRatio": 0.7936507936507936
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.15873015873015872
+          },
+          {
+            "name": "copper-cable",
+            "amount": 6,
+            "weightRatio": 0.047619047619047616
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "beacon",
+    "subgroup": "module",
+    "icon": "__base__/graphics/icons/beacon.png",
+    "stackSize": 20,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "beacon",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 20,
+            "weightRatio": 0.17391304347826086
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 20,
+            "weightRatio": 0.34782608695652173
+          },
+          {
+            "name": "steel-plate",
+            "amount": 10,
+            "weightRatio": 0.43478260869565216
+          },
+          {
+            "name": "copper-cable",
+            "amount": 10,
+            "weightRatio": 0.043478260869565216
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "storage-tank",
+    "subgroup": "storage",
+    "icon": "__base__/graphics/icons/storage-tank.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "storage-tank",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 20,
+            "weightRatio": 0.6153846153846154
+          },
+          {
+            "name": "steel-plate",
+            "amount": 5,
+            "weightRatio": 0.38461538461538464
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "pump",
+    "subgroup": "energy-pipe-distribution",
+    "icon": "__base__/graphics/icons/pump.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "pump",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "engine-unit",
+            "amount": 1,
+            "weightRatio": 0.25
+          },
+          {
+            "name": "steel-plate",
+            "amount": 1,
+            "weightRatio": 0.25
+          },
+          {
+            "name": "pipe",
+            "amount": 1,
+            "weightRatio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "upgrade-item",
+    "name": "upgrade-planner",
+    "subgroup": "tool",
+    "icon": "__base__/graphics/icons/upgrade-planner.png",
+    "stackSize": 1,
+    "rocketCapacity": 10000,
+    "alternatives": []
+  },
+  {
+    "type": "deconstruction-item",
+    "name": "deconstruction-planner",
+    "subgroup": "tool",
+    "icon": "__base__/graphics/icons/deconstruction-planner.png",
+    "stackSize": 1,
+    "rocketCapacity": 10000,
+    "alternatives": []
+  },
+  {
+    "type": "blueprint-book",
+    "name": "blueprint-book",
+    "subgroup": "tool",
+    "icon": "__base__/graphics/icons/blueprint-book.png",
+    "stackSize": 1,
+    "rocketCapacity": 10000,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "pumpjack",
+    "subgroup": "extraction-machine",
+    "icon": "__base__/graphics/icons/pumpjack.png",
+    "stackSize": 20,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "pumpjack",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 5,
+            "weightRatio": 0.16666666666666666
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 10,
+            "weightRatio": 0.13333333333333333
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 5,
+            "weightRatio": 0.03333333333333333
+          },
+          {
+            "name": "pipe",
+            "amount": 10,
+            "weightRatio": 0.6666666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "oil-refinery",
+    "subgroup": "production-machine",
+    "icon": "__base__/graphics/icons/oil-refinery.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "oil-refinery",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 15,
+            "weightRatio": 0.30612244897959184
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 10,
+            "weightRatio": 0.08163265306122448
+          },
+          {
+            "name": "stone-brick",
+            "amount": 10,
+            "weightRatio": 0.16326530612244897
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 10,
+            "weightRatio": 0.04081632653061224
+          },
+          {
+            "name": "pipe",
+            "amount": 10,
+            "weightRatio": 0.40816326530612246
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "chemical-plant",
+    "subgroup": "production-machine",
+    "icon": "__base__/graphics/icons/chemical-plant.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "chemical-plant",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 5,
+            "weightRatio": 0.2777777777777778
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 5,
+            "weightRatio": 0.1111111111111111
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 5,
+            "weightRatio": 0.05555555555555555
+          },
+          {
+            "name": "pipe",
+            "amount": 5,
+            "weightRatio": 0.5555555555555556
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "sulfur",
+    "subgroup": "raw-material",
+    "icon": "__base__/graphics/icons/sulfur.png",
+    "stackSize": 50,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "biosulfur",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "spoilage",
+            "amount": 5,
+            "weightRatio": 0.7142857142857143
+          },
+          {
+            "name": "bioflux",
+            "amount": 1,
+            "weightRatio": 0.2857142857142857
+          }
+        ]
+      },
+      {
+        "name": "advanced-carbonic-asteroid-crushing",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "carbonic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "barrel",
+    "subgroup": "intermediate-product",
+    "icon": "__base__/graphics/icons/fluid/barreling/empty-barrel.png",
+    "stackSize": 10,
+    "rocketCapacity": 200,
+    "alternatives": [
+      {
+        "name": "barrel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "plastic-bar",
+    "subgroup": "raw-material",
+    "icon": "__base__/graphics/icons/plastic-bar.png",
+    "stackSize": 100,
+    "rocketCapacity": 2000,
+    "alternatives": [
+      {
+        "name": "bioplastic",
+        "yield": 3,
+        "ingredients": [
+          {
+            "name": "bioflux",
+            "amount": 1,
+            "weightRatio": 0.3333333333333333
+          },
+          {
+            "name": "yumako-mash",
+            "amount": 4,
+            "weightRatio": 0.6666666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "electric-engine-unit",
+    "subgroup": "intermediate-product",
+    "icon": "__base__/graphics/icons/electric-engine-unit.png",
+    "stackSize": 50,
+    "rocketCapacity": 400,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "explosives",
+    "subgroup": "raw-material",
+    "icon": "__base__/graphics/icons/explosives.png",
+    "stackSize": 50,
+    "rocketCapacity": 500,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "battery",
+    "subgroup": "raw-material",
+    "icon": "__base__/graphics/icons/battery.png",
+    "stackSize": 200,
+    "rocketCapacity": 400,
+    "alternatives": [
+      {
+        "name": "scrap-recycling",
+        "yield": 0.04,
+        "ingredients": [
+          {
+            "name": "scrap",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "flying-robot-frame",
+    "subgroup": "intermediate-product",
+    "icon": "__base__/graphics/icons/flying-robot-frame.png",
+    "stackSize": 50,
+    "rocketCapacity": 150,
+    "alternatives": [
+      {
+        "name": "flying-robot-frame",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electric-engine-unit",
+            "amount": 1,
+            "weightRatio": 0.21739130434782608
+          },
+          {
+            "name": "battery",
+            "amount": 2,
+            "weightRatio": 0.43478260869565216
+          },
+          {
+            "name": "steel-plate",
+            "amount": 1,
+            "weightRatio": 0.21739130434782608
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 3,
+            "weightRatio": 0.13043478260869565
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "low-density-structure",
+    "subgroup": "intermediate-product",
+    "icon": "__base__/graphics/icons/low-density-structure.png",
+    "stackSize": 50,
+    "rocketCapacity": 200,
+    "alternatives": [
+      {
+        "name": "low-density-structure",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 2,
+            "weightRatio": 0.18181818181818182
+          },
+          {
+            "name": "copper-plate",
+            "amount": 20,
+            "weightRatio": 0.7272727272727273
+          },
+          {
+            "name": "plastic-bar",
+            "amount": 5,
+            "weightRatio": 0.09090909090909091
+          }
+        ]
+      },
+      {
+        "name": "scrap-recycling",
+        "yield": 0.01,
+        "ingredients": [
+          {
+            "name": "scrap",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "nuclear-fuel",
+    "subgroup": "uranium-processing",
+    "icon": "__base__/graphics/icons/nuclear-fuel.png",
+    "stackSize": 1,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "nuclear-fuel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "uranium-235",
+            "amount": 1,
+            "weightRatio": 0.8333333333333334
+          },
+          {
+            "name": "rocket-fuel",
+            "amount": 1,
+            "weightRatio": 0.16666666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "satellite",
+    "subgroup": "space-related",
+    "icon": "__base__/graphics/icons/satellite.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "satellite",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "low-density-structure",
+            "amount": 100,
+            "weightRatio": 0.09202453987730062
+          },
+          {
+            "name": "solar-panel",
+            "amount": 100,
+            "weightRatio": 0.3680981595092025
+          },
+          {
+            "name": "accumulator",
+            "amount": 100,
+            "weightRatio": 0.3680981595092025
+          },
+          {
+            "name": "radar",
+            "amount": 5,
+            "weightRatio": 0.018404907975460124
+          },
+          {
+            "name": "processing-unit",
+            "amount": 100,
+            "weightRatio": 0.06134969325153374
+          },
+          {
+            "name": "rocket-fuel",
+            "amount": 50,
+            "weightRatio": 0.09202453987730062
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item-with-entity-data",
+    "name": "spidertron",
+    "subgroup": "transport",
+    "icon": "__base__/graphics/icons/spidertron.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "spidertron",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "exoskeleton-equipment",
+            "amount": 4,
+            "weightRatio": 0.1264980026631158
+          },
+          {
+            "name": "fission-reactor-equipment",
+            "amount": 2,
+            "weightRatio": 0.19973368841544606
+          },
+          {
+            "name": "rocket-launcher",
+            "amount": 4,
+            "weightRatio": 0.3195739014647137
+          },
+          {
+            "name": "processing-unit",
+            "amount": 16,
+            "weightRatio": 0.021304926764314246
+          },
+          {
+            "name": "low-density-structure",
+            "amount": 150,
+            "weightRatio": 0.2996005326231691
+          },
+          {
+            "name": "radar",
+            "amount": 2,
+            "weightRatio": 0.015978695073235686
+          },
+          {
+            "name": "efficiency-module-3",
+            "amount": 2,
+            "weightRatio": 0.015978695073235686
+          },
+          {
+            "name": "raw-fish",
+            "amount": 1,
+            "weightRatio": 0.0013315579227696404
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "spidertron-remote",
+    "name": "spidertron-remote",
+    "subgroup": "spawnables",
+    "icon": "__base__/graphics/icons/spidertron-remote.png",
+    "stackSize": 1,
+    "rocketCapacity": 10000,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "nuclear-reactor",
+    "subgroup": "energy",
+    "icon": "__base__/graphics/icons/nuclear-reactor.png",
+    "stackSize": 10,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "nuclear-reactor",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "concrete",
+            "amount": 500,
+            "weightRatio": 0.6896551724137931
+          },
+          {
+            "name": "steel-plate",
+            "amount": 500,
+            "weightRatio": 0.1724137931034483
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 500,
+            "weightRatio": 0.06896551724137931
+          },
+          {
+            "name": "copper-plate",
+            "amount": 500,
+            "weightRatio": 0.06896551724137931
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "uranium-235",
+    "subgroup": "uranium-processing",
+    "icon": "__base__/graphics/icons/uranium-235.png",
+    "stackSize": 100,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "uranium-processing",
+        "yield": 0.007,
+        "ingredients": [
+          {
+            "name": "uranium-ore",
+            "amount": 10,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "kovarex-enrichment-process",
+        "yield": 41,
+        "ingredients": [
+          {
+            "name": "uranium-235",
+            "amount": 40,
+            "weightRatio": 0.8888888888888888
+          },
+          {
+            "name": "uranium-238",
+            "amount": 5,
+            "weightRatio": 0.1111111111111111
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "uranium-238",
+    "subgroup": "uranium-processing",
+    "icon": "__base__/graphics/icons/uranium-238.png",
+    "stackSize": 100,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "uranium-processing",
+        "yield": 0.993,
+        "ingredients": [
+          {
+            "name": "uranium-ore",
+            "amount": 10,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "kovarex-enrichment-process",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "uranium-235",
+            "amount": 40,
+            "weightRatio": 0.8888888888888888
+          },
+          {
+            "name": "uranium-238",
+            "amount": 5,
+            "weightRatio": 0.1111111111111111
+          }
+        ]
+      },
+      {
+        "name": "nuclear-fuel-reprocessing",
+        "yield": 3,
+        "ingredients": [
+          {
+            "name": "depleted-uranium-fuel-cell",
+            "amount": 5,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "centrifuge",
+    "subgroup": "production-machine",
+    "icon": "__base__/graphics/icons/centrifuge.png",
+    "stackSize": 50,
+    "rocketCapacity": 1.509433962264151,
+    "alternatives": [
+      {
+        "name": "centrifuge",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "concrete",
+            "amount": 100,
+            "weightRatio": 0.7547169811320755
+          },
+          {
+            "name": "steel-plate",
+            "amount": 50,
+            "weightRatio": 0.09433962264150944
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 100,
+            "weightRatio": 0.07547169811320754
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 100,
+            "weightRatio": 0.07547169811320754
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "uranium-fuel-cell",
+    "subgroup": "uranium-processing",
+    "icon": "__base__/graphics/icons/uranium-fuel-cell.png",
+    "stackSize": 50,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "uranium-fuel-cell",
+        "yield": 10,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 10,
+            "weightRatio": 0.009900990099009901
+          },
+          {
+            "name": "uranium-235",
+            "amount": 1,
+            "weightRatio": 0.04950495049504951
+          },
+          {
+            "name": "uranium-238",
+            "amount": 19,
+            "weightRatio": 0.9405940594059405
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "depleted-uranium-fuel-cell",
+    "subgroup": "uranium-processing",
+    "icon": "__base__/graphics/icons/depleted-uranium-fuel-cell.png",
+    "stackSize": 50,
+    "rocketCapacity": 10,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "heat-exchanger",
+    "subgroup": "energy",
+    "icon": "__base__/graphics/icons/heat-boiler.png",
+    "stackSize": 50,
+    "rocketCapacity": 25,
+    "alternatives": [
+      {
+        "name": "heat-exchanger",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 10,
+            "weightRatio": 0.14285714285714285
+          },
+          {
+            "name": "copper-plate",
+            "amount": 100,
+            "weightRatio": 0.5714285714285714
+          },
+          {
+            "name": "pipe",
+            "amount": 10,
+            "weightRatio": 0.2857142857142857
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "steam-turbine",
+    "subgroup": "energy",
+    "icon": "__base__/graphics/icons/steam-turbine.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "steam-turbine",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-gear-wheel",
+            "amount": 50,
+            "weightRatio": 0.25
+          },
+          {
+            "name": "copper-plate",
+            "amount": 50,
+            "weightRatio": 0.25
+          },
+          {
+            "name": "pipe",
+            "amount": 20,
+            "weightRatio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "heat-pipe",
+    "subgroup": "energy",
+    "icon": "__base__/graphics/icons/heat-pipe.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "heat-pipe",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 10,
+            "weightRatio": 0.5555555555555556
+          },
+          {
+            "name": "copper-plate",
+            "amount": 20,
+            "weightRatio": 0.4444444444444444
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "module",
+    "name": "speed-module",
+    "subgroup": "module",
+    "icon": "__base__/graphics/icons/speed-module.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "speed-module",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.6666666666666666
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 5,
+            "weightRatio": 0.3333333333333333
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "module",
+    "name": "speed-module-2",
+    "subgroup": "module",
+    "icon": "__base__/graphics/icons/speed-module-2.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "speed-module-2",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "speed-module",
+            "amount": 4,
+            "weightRatio": 0.7868852459016394
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.049180327868852465
+          },
+          {
+            "name": "processing-unit",
+            "amount": 5,
+            "weightRatio": 0.16393442622950818
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "module",
+    "name": "speed-module-3",
+    "subgroup": "module",
+    "icon": "__base__/graphics/icons/speed-module-3.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "speed-module-3",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "speed-module-2",
+            "amount": 4,
+            "weightRatio": 0.7868852459016394
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.049180327868852465
+          },
+          {
+            "name": "processing-unit",
+            "amount": 5,
+            "weightRatio": 0.16393442622950818
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "module",
+    "name": "efficiency-module",
+    "subgroup": "module",
+    "icon": "__base__/graphics/icons/efficiency-module.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "efficiency-module",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.6666666666666666
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 5,
+            "weightRatio": 0.3333333333333333
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "module",
+    "name": "efficiency-module-2",
+    "subgroup": "module",
+    "icon": "__base__/graphics/icons/efficiency-module-2.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "efficiency-module-2",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "efficiency-module",
+            "amount": 4,
+            "weightRatio": 0.7868852459016394
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.049180327868852465
+          },
+          {
+            "name": "processing-unit",
+            "amount": 5,
+            "weightRatio": 0.16393442622950818
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "module",
+    "name": "efficiency-module-3",
+    "subgroup": "module",
+    "icon": "__base__/graphics/icons/efficiency-module-3.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "efficiency-module-3",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "efficiency-module-2",
+            "amount": 4,
+            "weightRatio": 0.7868852459016394
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.049180327868852465
+          },
+          {
+            "name": "processing-unit",
+            "amount": 5,
+            "weightRatio": 0.16393442622950818
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "module",
+    "name": "productivity-module",
+    "subgroup": "module",
+    "icon": "__base__/graphics/icons/productivity-module.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "productivity-module",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.6666666666666666
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 5,
+            "weightRatio": 0.3333333333333333
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "module",
+    "name": "productivity-module-2",
+    "subgroup": "module",
+    "icon": "__base__/graphics/icons/productivity-module-2.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "productivity-module-2",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "productivity-module",
+            "amount": 4,
+            "weightRatio": 0.7868852459016394
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.049180327868852465
+          },
+          {
+            "name": "processing-unit",
+            "amount": 5,
+            "weightRatio": 0.16393442622950818
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "module",
+    "name": "productivity-module-3",
+    "subgroup": "module",
+    "icon": "__base__/graphics/icons/productivity-module-3.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "productivity-module-3",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "productivity-module-2",
+            "amount": 4,
+            "weightRatio": 0.7868852459016394
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.049180327868852465
+          },
+          {
+            "name": "processing-unit",
+            "amount": 5,
+            "weightRatio": 0.16393442622950818
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ammo",
+    "name": "uranium-rounds-magazine",
+    "subgroup": "ammo",
+    "icon": "__base__/graphics/icons/uranium-rounds-magazine.png",
+    "stackSize": 100,
+    "rocketCapacity": 25,
+    "alternatives": [
+      {
+        "name": "uranium-rounds-magazine",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "piercing-rounds-magazine",
+            "amount": 1,
+            "weightRatio": 0.2857142857142857
+          },
+          {
+            "name": "uranium-238",
+            "amount": 1,
+            "weightRatio": 0.7142857142857143
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ammo",
+    "name": "flamethrower-ammo",
+    "subgroup": "ammo",
+    "icon": "__base__/graphics/icons/flamethrower-ammo.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "ammo",
+    "name": "rocket",
+    "subgroup": "ammo",
+    "icon": "__base__/graphics/icons/rocket.png",
+    "stackSize": 100,
+    "rocketCapacity": 25,
+    "alternatives": [
+      {
+        "name": "rocket",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "explosives",
+            "amount": 1,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "iron-plate",
+            "amount": 2,
+            "weightRatio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ammo",
+    "name": "explosive-rocket",
+    "subgroup": "ammo",
+    "icon": "__base__/graphics/icons/explosive-rocket.png",
+    "stackSize": 100,
+    "rocketCapacity": 25,
+    "alternatives": [
+      {
+        "name": "explosive-rocket",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "rocket",
+            "amount": 1,
+            "weightRatio": 0.9090909090909091
+          },
+          {
+            "name": "explosives",
+            "amount": 2,
+            "weightRatio": 0.09090909090909091
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ammo",
+    "name": "atomic-bomb",
+    "subgroup": "ammo",
+    "icon": "__base__/graphics/icons/atomic-bomb.png",
+    "stackSize": 10,
+    "rocketCapacity": 0.6666666666666666,
+    "alternatives": [
+      {
+        "name": "atomic-bomb",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "processing-unit",
+            "amount": 10,
+            "weightRatio": 0.0065963060686015824
+          },
+          {
+            "name": "explosives",
+            "amount": 10,
+            "weightRatio": 0.00395778364116095
+          },
+          {
+            "name": "uranium-235",
+            "amount": 100,
+            "weightRatio": 0.9894459102902375
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ammo",
+    "name": "piercing-shotgun-shell",
+    "subgroup": "ammo",
+    "icon": "__base__/graphics/icons/piercing-shotgun-shell.png",
+    "stackSize": 100,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "piercing-shotgun-shell",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "shotgun-shell",
+            "amount": 2,
+            "weightRatio": 0.6666666666666666
+          },
+          {
+            "name": "copper-plate",
+            "amount": 5,
+            "weightRatio": 0.16666666666666666
+          },
+          {
+            "name": "steel-plate",
+            "amount": 2,
+            "weightRatio": 0.16666666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ammo",
+    "name": "cannon-shell",
+    "subgroup": "ammo",
+    "icon": "__base__/graphics/icons/cannon-shell.png",
+    "stackSize": 100,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "cannon-shell",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 2,
+            "weightRatio": 0.625
+          },
+          {
+            "name": "plastic-bar",
+            "amount": 2,
+            "weightRatio": 0.125
+          },
+          {
+            "name": "explosives",
+            "amount": 1,
+            "weightRatio": 0.25
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ammo",
+    "name": "explosive-cannon-shell",
+    "subgroup": "ammo",
+    "icon": "__base__/graphics/icons/explosive-cannon-shell.png",
+    "stackSize": 100,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "explosive-cannon-shell",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 2,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "plastic-bar",
+            "amount": 2,
+            "weightRatio": 0.1
+          },
+          {
+            "name": "explosives",
+            "amount": 2,
+            "weightRatio": 0.4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ammo",
+    "name": "uranium-cannon-shell",
+    "subgroup": "ammo",
+    "icon": "__base__/graphics/icons/uranium-cannon-shell.png",
+    "stackSize": 100,
+    "rocketCapacity": 25,
+    "alternatives": [
+      {
+        "name": "uranium-cannon-shell",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "cannon-shell",
+            "amount": 1,
+            "weightRatio": 0.2857142857142857
+          },
+          {
+            "name": "uranium-238",
+            "amount": 1,
+            "weightRatio": 0.7142857142857143
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ammo",
+    "name": "explosive-uranium-cannon-shell",
+    "subgroup": "ammo",
+    "icon": "__base__/graphics/icons/explosive-uranium-cannon-shell.png",
+    "stackSize": 100,
+    "rocketCapacity": 25,
+    "alternatives": [
+      {
+        "name": "explosive-uranium-cannon-shell",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "explosive-cannon-shell",
+            "amount": 1,
+            "weightRatio": 0.2857142857142857
+          },
+          {
+            "name": "uranium-238",
+            "amount": 1,
+            "weightRatio": 0.7142857142857143
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ammo",
+    "name": "artillery-shell",
+    "subgroup": "ammo",
+    "icon": "__base__/graphics/icons/artillery-shell.png",
+    "stackSize": 1,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "artillery-shell",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "radar",
+            "amount": 1,
+            "weightRatio": 0.37037037037037035
+          },
+          {
+            "name": "calcite",
+            "amount": 1,
+            "weightRatio": 0.037037037037037035
+          },
+          {
+            "name": "tungsten-plate",
+            "amount": 4,
+            "weightRatio": 0.2962962962962963
+          },
+          {
+            "name": "explosives",
+            "amount": 8,
+            "weightRatio": 0.2962962962962963
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "gun",
+    "name": "flamethrower",
+    "subgroup": "gun",
+    "icon": "__base__/graphics/icons/flamethrower.png",
+    "stackSize": 5,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "flamethrower",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 5,
+            "weightRatio": 0.5555555555555556
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 10,
+            "weightRatio": 0.4444444444444444
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "land-mine",
+    "subgroup": "defensive-structure",
+    "icon": "__base__/graphics/icons/land-mine.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "land-mine",
+        "yield": 4,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 1,
+            "weightRatio": 0.38461538461538464
+          },
+          {
+            "name": "explosives",
+            "amount": 2,
+            "weightRatio": 0.6153846153846154
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "gun",
+    "name": "rocket-launcher",
+    "subgroup": "gun",
+    "icon": "__base__/graphics/icons/rocket-launcher.png",
+    "stackSize": 5,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "rocket-launcher",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 5,
+            "weightRatio": 0.4
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 5,
+            "weightRatio": 0.4
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 5,
+            "weightRatio": 0.2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "gun",
+    "name": "combat-shotgun",
+    "subgroup": "gun",
+    "icon": "__base__/graphics/icons/combat-shotgun.png",
+    "stackSize": 5,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "combat-shotgun",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 15,
+            "weightRatio": 0.5172413793103449
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 5,
+            "weightRatio": 0.06896551724137931
+          },
+          {
+            "name": "copper-plate",
+            "amount": 10,
+            "weightRatio": 0.13793103448275862
+          },
+          {
+            "name": "wood",
+            "amount": 10,
+            "weightRatio": 0.27586206896551724
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "armor",
+    "name": "modular-armor",
+    "subgroup": "armor",
+    "icon": "__base__/graphics/icons/modular-armor.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "modular-armor",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "advanced-circuit",
+            "amount": 30,
+            "weightRatio": 0.1935483870967742
+          },
+          {
+            "name": "steel-plate",
+            "amount": 50,
+            "weightRatio": 0.8064516129032258
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "armor",
+    "name": "power-armor",
+    "subgroup": "armor",
+    "icon": "__base__/graphics/icons/power-armor.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "power-armor",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "processing-unit",
+            "amount": 40,
+            "weightRatio": 0.4705882352941176
+          },
+          {
+            "name": "electric-engine-unit",
+            "amount": 20,
+            "weightRatio": 0.17647058823529413
+          },
+          {
+            "name": "steel-plate",
+            "amount": 40,
+            "weightRatio": 0.35294117647058826
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "armor",
+    "name": "power-armor-mk2",
+    "subgroup": "armor",
+    "icon": "__base__/graphics/icons/power-armor-mk2.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "power-armor-mk2",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "efficiency-module",
+            "amount": 100,
+            "weightRatio": 0.449438202247191
+          },
+          {
+            "name": "speed-module",
+            "amount": 100,
+            "weightRatio": 0.449438202247191
+          },
+          {
+            "name": "processing-unit",
+            "amount": 60,
+            "weightRatio": 0.04494382022471909
+          },
+          {
+            "name": "electric-engine-unit",
+            "amount": 40,
+            "weightRatio": 0.02247191011235955
+          },
+          {
+            "name": "low-density-structure",
+            "amount": 30,
+            "weightRatio": 0.033707865168539325
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "capsule",
+    "name": "cluster-grenade",
+    "subgroup": "capsule",
+    "icon": "__base__/graphics/icons/cluster-grenade.png",
+    "stackSize": 100,
+    "rocketCapacity": 25,
+    "alternatives": [
+      {
+        "name": "cluster-grenade",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "grenade",
+            "amount": 7,
+            "weightRatio": 0.7567567567567568
+          },
+          {
+            "name": "explosives",
+            "amount": 5,
+            "weightRatio": 0.10810810810810811
+          },
+          {
+            "name": "steel-plate",
+            "amount": 5,
+            "weightRatio": 0.13513513513513514
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "capsule",
+    "name": "poison-capsule",
+    "subgroup": "capsule",
+    "icon": "__base__/graphics/icons/poison-capsule.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "poison-capsule",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 3,
+            "weightRatio": 0.25862068965517243
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 3,
+            "weightRatio": 0.05172413793103448
+          },
+          {
+            "name": "coal",
+            "amount": 10,
+            "weightRatio": 0.6896551724137931
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "capsule",
+    "name": "slowdown-capsule",
+    "subgroup": "capsule",
+    "icon": "__base__/graphics/icons/slowdown-capsule.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "slowdown-capsule",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 2,
+            "weightRatio": 0.3125
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 2,
+            "weightRatio": 0.0625
+          },
+          {
+            "name": "coal",
+            "amount": 5,
+            "weightRatio": 0.625
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "capsule",
+    "name": "distractor-capsule",
+    "subgroup": "capsule",
+    "icon": "__base__/graphics/icons/distractor-capsule.png",
+    "stackSize": 100,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "distractor-capsule",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "defender-capsule",
+            "amount": 4,
+            "weightRatio": 0.9302325581395349
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 3,
+            "weightRatio": 0.06976744186046512
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "capsule",
+    "name": "destroyer-capsule",
+    "subgroup": "capsule",
+    "icon": "__base__/graphics/icons/destroyer-capsule.png",
+    "stackSize": 100,
+    "rocketCapacity": 25,
+    "alternatives": [
+      {
+        "name": "destroyer-capsule",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "distractor-capsule",
+            "amount": 4,
+            "weightRatio": 0.8571428571428572
+          },
+          {
+            "name": "steel-plate",
+            "amount": 4,
+            "weightRatio": 0.10714285714285715
+          },
+          {
+            "name": "processing-unit",
+            "amount": 1,
+            "weightRatio": 0.03571428571428571
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "capsule",
+    "name": "cliff-explosives",
+    "subgroup": "terrain",
+    "icon": "__base__/graphics/icons/cliff-explosives.png",
+    "stackSize": 20,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "cliff-explosives",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "explosives",
+            "amount": 10,
+            "weightRatio": 0.36363636363636365
+          },
+          {
+            "name": "calcite",
+            "amount": 10,
+            "weightRatio": 0.36363636363636365
+          },
+          {
+            "name": "grenade",
+            "amount": 1,
+            "weightRatio": 0.18181818181818182
+          },
+          {
+            "name": "barrel",
+            "amount": 1,
+            "weightRatio": 0.09090909090909091
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ammo",
+    "name": "firearm-magazine",
+    "subgroup": "ammo",
+    "icon": "__base__/graphics/icons/firearm-magazine.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "firearm-magazine",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 4,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ammo",
+    "name": "piercing-rounds-magazine",
+    "subgroup": "ammo",
+    "icon": "__base__/graphics/icons/piercing-rounds-magazine.png",
+    "stackSize": 100,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "piercing-rounds-magazine",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "firearm-magazine",
+            "amount": 2,
+            "weightRatio": 0.8163265306122449
+          },
+          {
+            "name": "steel-plate",
+            "amount": 1,
+            "weightRatio": 0.10204081632653061
+          },
+          {
+            "name": "copper-plate",
+            "amount": 2,
+            "weightRatio": 0.08163265306122448
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ammo",
+    "name": "shotgun-shell",
+    "subgroup": "ammo",
+    "icon": "__base__/graphics/icons/shotgun-shell.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "shotgun-shell",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "copper-plate",
+            "amount": 2,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "iron-plate",
+            "amount": 2,
+            "weightRatio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "armor",
+    "name": "light-armor",
+    "subgroup": "armor",
+    "icon": "__base__/graphics/icons/light-armor.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "light-armor",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 40,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "armor",
+    "name": "heavy-armor",
+    "subgroup": "armor",
+    "icon": "__base__/graphics/icons/heavy-armor.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "heavy-armor",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "copper-plate",
+            "amount": 100,
+            "weightRatio": 0.4444444444444444
+          },
+          {
+            "name": "steel-plate",
+            "amount": 50,
+            "weightRatio": 0.5555555555555556
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "gun",
+    "name": "pistol",
+    "subgroup": "gun",
+    "icon": "__base__/graphics/icons/pistol.png",
+    "stackSize": 5,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "pistol",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "copper-plate",
+            "amount": 5,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "iron-plate",
+            "amount": 5,
+            "weightRatio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "gun",
+    "name": "submachine-gun",
+    "subgroup": "gun",
+    "icon": "__base__/graphics/icons/submachine-gun.png",
+    "stackSize": 5,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "submachine-gun",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-gear-wheel",
+            "amount": 10,
+            "weightRatio": 0.4
+          },
+          {
+            "name": "copper-plate",
+            "amount": 5,
+            "weightRatio": 0.2
+          },
+          {
+            "name": "iron-plate",
+            "amount": 10,
+            "weightRatio": 0.4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "gun",
+    "name": "shotgun",
+    "subgroup": "gun",
+    "icon": "__base__/graphics/icons/shotgun.png",
+    "stackSize": 5,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "shotgun",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 15,
+            "weightRatio": 0.375
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 5,
+            "weightRatio": 0.125
+          },
+          {
+            "name": "copper-plate",
+            "amount": 10,
+            "weightRatio": 0.25
+          },
+          {
+            "name": "wood",
+            "amount": 5,
+            "weightRatio": 0.25
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "solar-panel-equipment",
+    "subgroup": "equipment",
+    "icon": "__base__/graphics/icons/solar-panel-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "solar-panel-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "solar-panel",
+            "amount": 1,
+            "weightRatio": 0.5797101449275363
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 2,
+            "weightRatio": 0.057971014492753624
+          },
+          {
+            "name": "steel-plate",
+            "amount": 5,
+            "weightRatio": 0.36231884057971014
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "fission-reactor-equipment",
+    "subgroup": "equipment",
+    "icon": "__base__/graphics/icons/fission-reactor-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 4,
+    "alternatives": [
+      {
+        "name": "fission-reactor-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "processing-unit",
+            "amount": 200,
+            "weightRatio": 0.5063291139240507
+          },
+          {
+            "name": "low-density-structure",
+            "amount": 50,
+            "weightRatio": 0.189873417721519
+          },
+          {
+            "name": "uranium-fuel-cell",
+            "amount": 4,
+            "weightRatio": 0.3037974683544304
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "battery-equipment",
+    "subgroup": "equipment",
+    "icon": "__base__/graphics/icons/battery-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "battery-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "battery",
+            "amount": 5,
+            "weightRatio": 0.3333333333333333
+          },
+          {
+            "name": "steel-plate",
+            "amount": 10,
+            "weightRatio": 0.6666666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "battery-mk2-equipment",
+    "subgroup": "equipment",
+    "icon": "__base__/graphics/icons/battery-mk2-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "battery-mk2-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "battery-equipment",
+            "amount": 10,
+            "weightRatio": 0.8695652173913043
+          },
+          {
+            "name": "processing-unit",
+            "amount": 15,
+            "weightRatio": 0.08695652173913042
+          },
+          {
+            "name": "low-density-structure",
+            "amount": 5,
+            "weightRatio": 0.043478260869565216
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "belt-immunity-equipment",
+    "subgroup": "utility-equipment",
+    "icon": "__base__/graphics/icons/belt-immunity-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "belt-immunity-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.16666666666666666
+          },
+          {
+            "name": "steel-plate",
+            "amount": 10,
+            "weightRatio": 0.8333333333333334
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "exoskeleton-equipment",
+    "subgroup": "utility-equipment",
+    "icon": "__base__/graphics/icons/exoskeleton-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 12.631578947368423,
+    "alternatives": [
+      {
+        "name": "exoskeleton-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "processing-unit",
+            "amount": 10,
+            "weightRatio": 0.21052631578947367
+          },
+          {
+            "name": "electric-engine-unit",
+            "amount": 30,
+            "weightRatio": 0.4736842105263159
+          },
+          {
+            "name": "steel-plate",
+            "amount": 20,
+            "weightRatio": 0.31578947368421056
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "personal-roboport-equipment",
+    "subgroup": "utility-equipment",
+    "icon": "__base__/graphics/icons/personal-roboport-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 9.411764705882353,
+    "alternatives": [
+      {
+        "name": "personal-roboport-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "advanced-circuit",
+            "amount": 10,
+            "weightRatio": 0.047058823529411764
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 40,
+            "weightRatio": 0.18823529411764706
+          },
+          {
+            "name": "steel-plate",
+            "amount": 20,
+            "weightRatio": 0.23529411764705882
+          },
+          {
+            "name": "battery",
+            "amount": 45,
+            "weightRatio": 0.5294117647058824
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "personal-roboport-mk2-equipment",
+    "subgroup": "utility-equipment",
+    "icon": "__base__/graphics/icons/personal-roboport-mk2-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 2.6740947075208914,
+    "alternatives": [
+      {
+        "name": "personal-roboport-mk2-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "personal-roboport-equipment",
+            "amount": 5,
+            "weightRatio": 0.7103064066852368
+          },
+          {
+            "name": "processing-unit",
+            "amount": 50,
+            "weightRatio": 0.22284122562674094
+          },
+          {
+            "name": "superconductor",
+            "amount": 50,
+            "weightRatio": 0.06685236768802229
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "night-vision-equipment",
+    "subgroup": "utility-equipment",
+    "icon": "__base__/graphics/icons/night-vision-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "night-vision-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.16666666666666666
+          },
+          {
+            "name": "steel-plate",
+            "amount": 10,
+            "weightRatio": 0.8333333333333334
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "energy-shield-equipment",
+    "subgroup": "military-equipment",
+    "icon": "__base__/graphics/icons/energy-shield-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "energy-shield-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.16666666666666666
+          },
+          {
+            "name": "steel-plate",
+            "amount": 10,
+            "weightRatio": 0.8333333333333334
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "energy-shield-mk2-equipment",
+    "subgroup": "military-equipment",
+    "icon": "__base__/graphics/icons/energy-shield-mk2-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "energy-shield-mk2-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "energy-shield-equipment",
+            "amount": 10,
+            "weightRatio": 0.9230769230769229
+          },
+          {
+            "name": "processing-unit",
+            "amount": 5,
+            "weightRatio": 0.03076923076923076
+          },
+          {
+            "name": "low-density-structure",
+            "amount": 5,
+            "weightRatio": 0.04615384615384615
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "personal-laser-defense-equipment",
+    "subgroup": "military-equipment",
+    "icon": "__base__/graphics/icons/personal-laser-defense-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "personal-laser-defense-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "processing-unit",
+            "amount": 20,
+            "weightRatio": 0.22857142857142856
+          },
+          {
+            "name": "low-density-structure",
+            "amount": 5,
+            "weightRatio": 0.08571428571428573
+          },
+          {
+            "name": "laser-turret",
+            "amount": 5,
+            "weightRatio": 0.6857142857142858
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "discharge-defense-equipment",
+    "subgroup": "military-equipment",
+    "icon": "__base__/graphics/icons/discharge-defense-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 4.2857142857142865,
+    "alternatives": [
+      {
+        "name": "discharge-defense-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "processing-unit",
+            "amount": 5,
+            "weightRatio": 0.03571428571428571
+          },
+          {
+            "name": "steel-plate",
+            "amount": 20,
+            "weightRatio": 0.10714285714285715
+          },
+          {
+            "name": "laser-turret",
+            "amount": 10,
+            "weightRatio": 0.8571428571428572
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "capsule",
+    "name": "discharge-defense-remote",
+    "subgroup": "spawnables",
+    "icon": "__base__/graphics/icons/discharge-defense-equipment-controller.png",
+    "stackSize": 1,
+    "rocketCapacity": 10000,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "gun-turret",
+    "subgroup": "turret",
+    "icon": "__base__/graphics/icons/gun-turret.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "gun-turret",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-gear-wheel",
+            "amount": 10,
+            "weightRatio": 0.25
+          },
+          {
+            "name": "copper-plate",
+            "amount": 10,
+            "weightRatio": 0.25
+          },
+          {
+            "name": "iron-plate",
+            "amount": 20,
+            "weightRatio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "laser-turret",
+    "subgroup": "turret",
+    "icon": "__base__/graphics/icons/laser-turret.png",
+    "stackSize": 50,
+    "rocketCapacity": 25,
+    "alternatives": [
+      {
+        "name": "laser-turret",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 20,
+            "weightRatio": 0.5555555555555556
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 20,
+            "weightRatio": 0.1111111111111111
+          },
+          {
+            "name": "battery",
+            "amount": 12,
+            "weightRatio": 0.3333333333333333
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "flamethrower-turret",
+    "subgroup": "turret",
+    "icon": "__base__/graphics/icons/flamethrower-turret.png",
+    "stackSize": 50,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "flamethrower-turret",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 30,
+            "weightRatio": 0.4918032786885246
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 15,
+            "weightRatio": 0.09836065573770492
+          },
+          {
+            "name": "pipe",
+            "amount": 10,
+            "weightRatio": 0.32786885245901637
+          },
+          {
+            "name": "engine-unit",
+            "amount": 5,
+            "weightRatio": 0.08196721311475409
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "artillery-turret",
+    "subgroup": "turret",
+    "icon": "__base__/graphics/icons/artillery-turret.png",
+    "stackSize": 10,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "artillery-turret",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "tungsten-plate",
+            "amount": 60,
+            "weightRatio": 0.26277372262773724
+          },
+          {
+            "name": "refined-concrete",
+            "amount": 60,
+            "weightRatio": 0.656934306569343
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 40,
+            "weightRatio": 0.0437956204379562
+          },
+          {
+            "name": "processing-unit",
+            "amount": 10,
+            "weightRatio": 0.036496350364963494
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "capsule",
+    "name": "artillery-targeting-remote",
+    "subgroup": "spawnables",
+    "icon": "__base__/graphics/icons/artillery-targeting-remote.png",
+    "stackSize": 1,
+    "rocketCapacity": 10000,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "arithmetic-combinator",
+    "subgroup": "circuit-network",
+    "icon": "__base__/graphics/icons/arithmetic-combinator.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "arithmetic-combinator",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "copper-cable",
+            "amount": 5,
+            "weightRatio": 0.3333333333333333
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 5,
+            "weightRatio": 0.6666666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "decider-combinator",
+    "subgroup": "circuit-network",
+    "icon": "__base__/graphics/icons/decider-combinator.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "decider-combinator",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "copper-cable",
+            "amount": 5,
+            "weightRatio": 0.3333333333333333
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 5,
+            "weightRatio": 0.6666666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "constant-combinator",
+    "subgroup": "circuit-network",
+    "icon": "__base__/graphics/icons/constant-combinator.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "constant-combinator",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "copper-cable",
+            "amount": 5,
+            "weightRatio": 0.5555555555555556
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 2,
+            "weightRatio": 0.4444444444444444
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "selector-combinator",
+    "subgroup": "circuit-network",
+    "icon": "__base__/graphics/icons/selector-combinator.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "selector-combinator",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "advanced-circuit",
+            "amount": 2,
+            "weightRatio": 0.0196078431372549
+          },
+          {
+            "name": "decider-combinator",
+            "amount": 5,
+            "weightRatio": 0.9803921568627451
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "power-switch",
+    "subgroup": "circuit-network",
+    "icon": "__base__/graphics/icons/power-switch.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "power-switch",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 5,
+            "weightRatio": 0.6896551724137931
+          },
+          {
+            "name": "copper-cable",
+            "amount": 5,
+            "weightRatio": 0.1724137931034483
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 2,
+            "weightRatio": 0.13793103448275862
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "programmable-speaker",
+    "subgroup": "circuit-network",
+    "icon": "__base__/graphics/icons/programmable-speaker.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "programmable-speaker",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 3,
+            "weightRatio": 0.36363636363636365
+          },
+          {
+            "name": "iron-stick",
+            "amount": 4,
+            "weightRatio": 0.24242424242424243
+          },
+          {
+            "name": "copper-cable",
+            "amount": 5,
+            "weightRatio": 0.15151515151515152
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 4,
+            "weightRatio": 0.24242424242424243
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "display-panel",
+    "subgroup": "circuit-network",
+    "icon": "__base__/graphics/icons/display-panel.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "display-panel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-plate",
+            "amount": 1,
+            "weightRatio": 0.6666666666666666
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 1,
+            "weightRatio": 0.3333333333333333
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "space-platform-foundation",
+    "subgroup": "space-platform",
+    "icon": "__space-age__/graphics/icons/space-platform-foundation.png",
+    "stackSize": 100,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "space-platform-foundation",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 20,
+            "weightRatio": 0.9090909090909091
+          },
+          {
+            "name": "copper-cable",
+            "amount": 20,
+            "weightRatio": 0.09090909090909091
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "tool",
+    "name": "metallurgic-science-pack",
+    "subgroup": "science-pack",
+    "icon": "__space-age__/graphics/icons/metallurgic-science-pack.png",
+    "stackSize": 200,
+    "rocketCapacity": 1000,
+    "alternatives": []
+  },
+  {
+    "type": "tool",
+    "name": "agricultural-science-pack",
+    "subgroup": "science-pack",
+    "icon": "__space-age__/graphics/icons/agricultural-science-pack.png",
+    "stackSize": 200,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "agricultural-science-pack",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "bioflux",
+            "amount": 1,
+            "weightRatio": 0.16666666666666666
+          },
+          {
+            "name": "pentapod-egg",
+            "amount": 1,
+            "weightRatio": 0.8333333333333334
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "tool",
+    "name": "electromagnetic-science-pack",
+    "subgroup": "science-pack",
+    "icon": "__space-age__/graphics/icons/electromagnetic-science-pack.png",
+    "stackSize": 200,
+    "rocketCapacity": 1000,
+    "alternatives": []
+  },
+  {
+    "type": "tool",
+    "name": "cryogenic-science-pack",
+    "subgroup": "science-pack",
+    "icon": "__space-age__/graphics/icons/cryogenic-science-pack.png",
+    "stackSize": 200,
+    "rocketCapacity": 1000,
+    "alternatives": []
+  },
+  {
+    "type": "tool",
+    "name": "promethium-science-pack",
+    "subgroup": "science-pack",
+    "icon": "__space-age__/graphics/icons/promethium-science-pack.png",
+    "stackSize": 200,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "promethium-science-pack",
+        "yield": 10,
+        "ingredients": [
+          {
+            "name": "promethium-asteroid-chunk",
+            "amount": 25,
+            "weightRatio": 0.9900990099009901
+          },
+          {
+            "name": "quantum-processor",
+            "amount": 1,
+            "weightRatio": 0.0019801980198019802
+          },
+          {
+            "name": "biter-egg",
+            "amount": 10,
+            "weightRatio": 0.007920792079207921
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "turbo-transport-belt",
+    "subgroup": "belt",
+    "icon": "__space-age__/graphics/icons/turbo-transport-belt.png",
+    "stackSize": 100,
+    "rocketCapacity": 50,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "turbo-underground-belt",
+    "subgroup": "belt",
+    "icon": "__space-age__/graphics/icons/turbo-underground-belt.png",
+    "stackSize": 50,
+    "rocketCapacity": 25,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "turbo-splitter",
+    "subgroup": "belt",
+    "icon": "__space-age__/graphics/icons/turbo-splitter.png",
+    "stackSize": 50,
+    "rocketCapacity": 25,
+    "alternatives": []
+  },
+  {
+    "type": "armor",
+    "name": "mech-armor",
+    "subgroup": "armor",
+    "icon": "__space-age__/graphics/icons/mech-armor.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "mech-armor",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "power-armor-mk2",
+            "amount": 1,
+            "weightRatio": 0.594059405940594
+          },
+          {
+            "name": "holmium-plate",
+            "amount": 200,
+            "weightRatio": 0.11881188118811882
+          },
+          {
+            "name": "processing-unit",
+            "amount": 100,
+            "weightRatio": 0.19801980198019803
+          },
+          {
+            "name": "superconductor",
+            "amount": 50,
+            "weightRatio": 0.029702970297029705
+          },
+          {
+            "name": "supercapacitor",
+            "amount": 50,
+            "weightRatio": 0.05940594059405941
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "toolbelt-equipment",
+    "subgroup": "utility-equipment",
+    "icon": "__space-age__/graphics/icons/toolbelt-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "toolbelt-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "advanced-circuit",
+            "amount": 3,
+            "weightRatio": 0.13043478260869565
+          },
+          {
+            "name": "carbon-fiber",
+            "amount": 10,
+            "weightRatio": 0.8695652173913043
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "battery-mk3-equipment",
+    "subgroup": "equipment",
+    "icon": "__space-age__/graphics/icons/battery-mk3-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "battery-mk3-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "battery-mk2-equipment",
+            "amount": 5,
+            "weightRatio": 0.9615384615384616
+          },
+          {
+            "name": "supercapacitor",
+            "amount": 10,
+            "weightRatio": 0.038461538461538464
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "cargo-bay",
+    "subgroup": "space-platform",
+    "icon": "__space-age__/graphics/icons/cargo-bay.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "cargo-bay",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 20,
+            "weightRatio": 0.30000000000000004
+          },
+          {
+            "name": "low-density-structure",
+            "amount": 20,
+            "weightRatio": 0.6000000000000001
+          },
+          {
+            "name": "processing-unit",
+            "amount": 5,
+            "weightRatio": 0.09999999999999999
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "space-platform-starter-pack",
+    "name": "space-platform-starter-pack",
+    "subgroup": "space-rocket",
+    "icon": "__space-age__/graphics/icons/space-platform-starter-pack.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "space-platform-starter-pack",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "space-platform-foundation",
+            "amount": 60,
+            "weightRatio": 0.9113924050632911
+          },
+          {
+            "name": "steel-plate",
+            "amount": 20,
+            "weightRatio": 0.0379746835443038
+          },
+          {
+            "name": "processing-unit",
+            "amount": 20,
+            "weightRatio": 0.050632911392405056
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "metallic-asteroid-chunk",
+    "subgroup": "space-material",
+    "icon": "__space-age__/graphics/icons/metallic-asteroid-chunk.png",
+    "stackSize": 1,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "metallic-asteroid-crushing",
+        "yield": 0.2,
+        "ingredients": [
+          {
+            "name": "metallic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "advanced-metallic-asteroid-crushing",
+        "yield": 0.05,
+        "ingredients": [
+          {
+            "name": "metallic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "metallic-asteroid-reprocessing",
+        "yield": 0.4,
+        "ingredients": [
+          {
+            "name": "metallic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "carbonic-asteroid-reprocessing",
+        "yield": 0.2,
+        "ingredients": [
+          {
+            "name": "carbonic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "oxide-asteroid-reprocessing",
+        "yield": 0.2,
+        "ingredients": [
+          {
+            "name": "oxide-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "carbonic-asteroid-chunk",
+    "subgroup": "space-material",
+    "icon": "__space-age__/graphics/icons/carbonic-asteroid-chunk.png",
+    "stackSize": 1,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "carbonic-asteroid-crushing",
+        "yield": 0.2,
+        "ingredients": [
+          {
+            "name": "carbonic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "advanced-carbonic-asteroid-crushing",
+        "yield": 0.05,
+        "ingredients": [
+          {
+            "name": "carbonic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "metallic-asteroid-reprocessing",
+        "yield": 0.2,
+        "ingredients": [
+          {
+            "name": "metallic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "carbonic-asteroid-reprocessing",
+        "yield": 0.4,
+        "ingredients": [
+          {
+            "name": "carbonic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "oxide-asteroid-reprocessing",
+        "yield": 0.2,
+        "ingredients": [
+          {
+            "name": "oxide-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "oxide-asteroid-chunk",
+    "subgroup": "space-material",
+    "icon": "__space-age__/graphics/icons/oxide-asteroid-chunk.png",
+    "stackSize": 1,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "oxide-asteroid-crushing",
+        "yield": 0.2,
+        "ingredients": [
+          {
+            "name": "oxide-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "advanced-oxide-asteroid-crushing",
+        "yield": 0.05,
+        "ingredients": [
+          {
+            "name": "oxide-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "metallic-asteroid-reprocessing",
+        "yield": 0.2,
+        "ingredients": [
+          {
+            "name": "metallic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "carbonic-asteroid-reprocessing",
+        "yield": 0.2,
+        "ingredients": [
+          {
+            "name": "carbonic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "oxide-asteroid-reprocessing",
+        "yield": 0.4,
+        "ingredients": [
+          {
+            "name": "oxide-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "promethium-asteroid-chunk",
+    "subgroup": "space-material",
+    "icon": "__space-age__/graphics/icons/promethium-asteroid-chunk.png",
+    "stackSize": 1,
+    "rocketCapacity": 10,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "asteroid-collector",
+    "subgroup": "space-platform",
+    "icon": "__space-age__/graphics/icons/asteroid-collector.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "asteroid-collector",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "low-density-structure",
+            "amount": 20,
+            "weightRatio": 0.7317073170731708
+          },
+          {
+            "name": "electric-engine-unit",
+            "amount": 8,
+            "weightRatio": 0.14634146341463417
+          },
+          {
+            "name": "processing-unit",
+            "amount": 5,
+            "weightRatio": 0.12195121951219512
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "crusher",
+    "subgroup": "space-platform",
+    "icon": "__space-age__/graphics/icons/crusher.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "crusher",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "low-density-structure",
+            "amount": 20,
+            "weightRatio": 0.6666666666666666
+          },
+          {
+            "name": "steel-plate",
+            "amount": 10,
+            "weightRatio": 0.16666666666666666
+          },
+          {
+            "name": "electric-engine-unit",
+            "amount": 10,
+            "weightRatio": 0.16666666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "thruster",
+    "subgroup": "space-platform",
+    "icon": "__space-age__/graphics/icons/thruster.png",
+    "stackSize": 10,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "thruster",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 10,
+            "weightRatio": 0.35294117647058826
+          },
+          {
+            "name": "processing-unit",
+            "amount": 10,
+            "weightRatio": 0.4705882352941176
+          },
+          {
+            "name": "electric-engine-unit",
+            "amount": 5,
+            "weightRatio": 0.17647058823529413
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "ice",
+    "subgroup": "raw-resource",
+    "icon": "__space-age__/graphics/icons/ice.png",
+    "stackSize": 50,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "oxide-asteroid-crushing",
+        "yield": 5,
+        "ingredients": [
+          {
+            "name": "oxide-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "advanced-oxide-asteroid-crushing",
+        "yield": 3,
+        "ingredients": [
+          {
+            "name": "oxide-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "scrap-recycling",
+        "yield": 0.05,
+        "ingredients": [
+          {
+            "name": "scrap",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "carbon",
+    "subgroup": "raw-material",
+    "icon": "__space-age__/graphics/icons/carbon.png",
+    "stackSize": 50,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "carbonic-asteroid-crushing",
+        "yield": 10,
+        "ingredients": [
+          {
+            "name": "carbonic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "advanced-carbonic-asteroid-crushing",
+        "yield": 5,
+        "ingredients": [
+          {
+            "name": "carbonic-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "burnt-spoilage",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "spoilage",
+            "amount": 6,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "calcite",
+    "subgroup": "vulcanus-processes",
+    "icon": "__space-age__/graphics/icons/calcite.png",
+    "stackSize": 50,
+    "rocketCapacity": 500,
+    "alternatives": [
+      {
+        "name": "advanced-oxide-asteroid-crushing",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "oxide-asteroid-chunk",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "tungsten-ore",
+    "subgroup": "vulcanus-processes",
+    "icon": "__space-age__/graphics/icons/tungsten-ore.png",
+    "stackSize": 50,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "tungsten-plate",
+    "subgroup": "vulcanus-processes",
+    "icon": "__space-age__/graphics/icons/tungsten-plate.png",
+    "stackSize": 50,
+    "rocketCapacity": 250,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "big-mining-drill",
+    "subgroup": "extraction-machine",
+    "icon": "__space-age__/graphics/icons/big-mining-drill.png",
+    "stackSize": 20,
+    "rocketCapacity": 20,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "tungsten-carbide",
+    "subgroup": "vulcanus-processes",
+    "icon": "__space-age__/graphics/icons/tungsten-carbide.png",
+    "stackSize": 50,
+    "rocketCapacity": 500,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "foundry",
+    "subgroup": "smelting-machine",
+    "icon": "__space-age__/graphics/icons/foundry.png",
+    "stackSize": 20,
+    "rocketCapacity": 5,
+    "alternatives": []
+  },
+  {
+    "type": "gun",
+    "name": "railgun",
+    "subgroup": "gun",
+    "icon": "__space-age__/graphics/icons/railgun.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "railgun-turret",
+    "subgroup": "turret",
+    "icon": "__space-age__/graphics/icons/railgun-turret.png",
+    "stackSize": 10,
+    "rocketCapacity": 1,
+    "alternatives": []
+  },
+  {
+    "type": "ammo",
+    "name": "railgun-ammo",
+    "subgroup": "ammo",
+    "icon": "__space-age__/graphics/icons/railgun-ammo.png",
+    "stackSize": 10,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "railgun-ammo",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 5,
+            "weightRatio": 0.6578947368421053
+          },
+          {
+            "name": "copper-cable",
+            "amount": 10,
+            "weightRatio": 0.13157894736842105
+          },
+          {
+            "name": "explosives",
+            "amount": 2,
+            "weightRatio": 0.21052631578947367
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "capsule",
+    "name": "yumako",
+    "subgroup": "agriculture-processes",
+    "icon": "__space-age__/graphics/icons/yumako.png",
+    "stackSize": 50,
+    "rocketCapacity": 1000,
+    "alternatives": []
+  },
+  {
+    "type": "capsule",
+    "name": "jellynut",
+    "subgroup": "agriculture-processes",
+    "icon": "__space-age__/graphics/icons/jellynut.png",
+    "stackSize": 50,
+    "rocketCapacity": 1000,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "copper-bacteria",
+    "subgroup": "agriculture-processes",
+    "icon": "__space-age__/graphics/icons/copper-bacteria.png",
+    "stackSize": 50,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "copper-bacteria",
+        "yield": 0.1,
+        "ingredients": [
+          {
+            "name": "yumako-mash",
+            "amount": 3,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "copper-bacteria-cultivation",
+        "yield": 4,
+        "ingredients": [
+          {
+            "name": "copper-bacteria",
+            "amount": 1,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "bioflux",
+            "amount": 1,
+            "weightRatio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "iron-bacteria",
+    "subgroup": "agriculture-processes",
+    "icon": "__space-age__/graphics/icons/iron-bacteria.png",
+    "stackSize": 50,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "iron-bacteria",
+        "yield": 0.1,
+        "ingredients": [
+          {
+            "name": "jelly",
+            "amount": 6,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "iron-bacteria-cultivation",
+        "yield": 4,
+        "ingredients": [
+          {
+            "name": "iron-bacteria",
+            "amount": 1,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "bioflux",
+            "amount": 1,
+            "weightRatio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "yumako-seed",
+    "subgroup": "agriculture-processes",
+    "icon": "__space-age__/graphics/icons/yumako-seed.png",
+    "stackSize": 10,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "yumako-processing",
+        "yield": 0.02,
+        "ingredients": [
+          {
+            "name": "yumako",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "jellynut-seed",
+    "subgroup": "agriculture-processes",
+    "icon": "__space-age__/graphics/icons/jellynut-seed.png",
+    "stackSize": 10,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "jellynut-processing",
+        "yield": 0.02,
+        "ingredients": [
+          {
+            "name": "jellynut",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "nutrients",
+    "subgroup": "agriculture-processes",
+    "icon": "__space-age__/graphics/icons/nutrients.png",
+    "stackSize": 100,
+    "rocketCapacity": 2000,
+    "alternatives": [
+      {
+        "name": "nutrients-from-spoilage",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "spoilage",
+            "amount": 10,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "nutrients-from-yumako-mash",
+        "yield": 6,
+        "ingredients": [
+          {
+            "name": "yumako-mash",
+            "amount": 4,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "nutrients-from-bioflux",
+        "yield": 40,
+        "ingredients": [
+          {
+            "name": "bioflux",
+            "amount": 5,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "nutrients-from-fish",
+        "yield": 20,
+        "ingredients": [
+          {
+            "name": "raw-fish",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "nutrients-from-biter-egg",
+        "yield": 20,
+        "ingredients": [
+          {
+            "name": "biter-egg",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "capsule",
+    "name": "yumako-mash",
+    "subgroup": "agriculture-products",
+    "icon": "__space-age__/graphics/icons/yumako-mash.png",
+    "stackSize": 100,
+    "rocketCapacity": 2000,
+    "alternatives": [
+      {
+        "name": "yumako-processing",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "yumako",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "capsule",
+    "name": "jelly",
+    "subgroup": "agriculture-products",
+    "icon": "__space-age__/graphics/icons/jelly.png",
+    "stackSize": 100,
+    "rocketCapacity": 2000,
+    "alternatives": [
+      {
+        "name": "jellynut-processing",
+        "yield": 4,
+        "ingredients": [
+          {
+            "name": "jellynut",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "capsule",
+    "name": "bioflux",
+    "subgroup": "agriculture-products",
+    "icon": "__space-age__/graphics/icons/bioflux.png",
+    "stackSize": 100,
+    "rocketCapacity": 1000,
+    "alternatives": [
+      {
+        "name": "bioflux",
+        "yield": 4,
+        "ingredients": [
+          {
+            "name": "yumako-mash",
+            "amount": 15,
+            "weightRatio": 0.5555555555555556
+          },
+          {
+            "name": "jelly",
+            "amount": 12,
+            "weightRatio": 0.4444444444444444
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "artificial-yumako-soil",
+    "subgroup": "terrain",
+    "icon": "__space-age__/graphics/icons/artificial-yumako-soil.png",
+    "stackSize": 100,
+    "rocketCapacity": 67.79661016949153,
+    "alternatives": [
+      {
+        "name": "artificial-yumako-soil",
+        "yield": 10,
+        "ingredients": [
+          {
+            "name": "yumako-seed",
+            "amount": 2,
+            "weightRatio": 0.06779661016949153
+          },
+          {
+            "name": "nutrients",
+            "amount": 50,
+            "weightRatio": 0.0847457627118644
+          },
+          {
+            "name": "landfill",
+            "amount": 5,
+            "weightRatio": 0.847457627118644
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "overgrowth-yumako-soil",
+    "subgroup": "terrain",
+    "icon": "__space-age__/graphics/icons/overgrowth-yumako-soil.png",
+    "stackSize": 100,
+    "rocketCapacity": 14.869888475836431,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "artificial-jellynut-soil",
+    "subgroup": "terrain",
+    "icon": "__space-age__/graphics/icons/artificial-jellynut-soil.png",
+    "stackSize": 100,
+    "rocketCapacity": 67.79661016949153,
+    "alternatives": [
+      {
+        "name": "artificial-jellynut-soil",
+        "yield": 10,
+        "ingredients": [
+          {
+            "name": "jellynut-seed",
+            "amount": 2,
+            "weightRatio": 0.06779661016949153
+          },
+          {
+            "name": "nutrients",
+            "amount": 50,
+            "weightRatio": 0.0847457627118644
+          },
+          {
+            "name": "landfill",
+            "amount": 5,
+            "weightRatio": 0.847457627118644
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "overgrowth-jellynut-soil",
+    "subgroup": "terrain",
+    "icon": "__space-age__/graphics/icons/overgrowth-jellynut-soil.png",
+    "stackSize": 100,
+    "rocketCapacity": 14.869888475836431,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "agricultural-tower",
+    "subgroup": "agriculture",
+    "icon": "__space-age__/graphics/icons/agricultural-tower.png",
+    "stackSize": 20,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "agricultural-tower",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 10,
+            "weightRatio": 0.28901734104046245
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 3,
+            "weightRatio": 0.017341040462427744
+          },
+          {
+            "name": "spoilage",
+            "amount": 20,
+            "weightRatio": 0.11560693641618497
+          },
+          {
+            "name": "landfill",
+            "amount": 1,
+            "weightRatio": 0.5780346820809249
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "biochamber",
+    "subgroup": "agriculture",
+    "icon": "__space-age__/graphics/icons/biochamber.png",
+    "stackSize": 20,
+    "rocketCapacity": 20,
+    "alternatives": [
+      {
+        "name": "biochamber",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "nutrients",
+            "amount": 5,
+            "weightRatio": 0.03125
+          },
+          {
+            "name": "pentapod-egg",
+            "amount": 1,
+            "weightRatio": 0.0625
+          },
+          {
+            "name": "iron-plate",
+            "amount": 20,
+            "weightRatio": 0.25
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 5,
+            "weightRatio": 0.03125
+          },
+          {
+            "name": "landfill",
+            "amount": 1,
+            "weightRatio": 0.625
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ammo",
+    "name": "capture-robot-rocket",
+    "subgroup": "ammo",
+    "icon": "__space-age__/graphics/icons/capture-bot.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "capture-robot-rocket",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "flying-robot-frame",
+            "amount": 1,
+            "weightRatio": 0.17391304347826086
+          },
+          {
+            "name": "steel-plate",
+            "amount": 2,
+            "weightRatio": 0.13043478260869568
+          },
+          {
+            "name": "bioflux",
+            "amount": 20,
+            "weightRatio": 0.5217391304347827
+          },
+          {
+            "name": "processing-unit",
+            "amount": 2,
+            "weightRatio": 0.17391304347826086
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "biolab",
+    "subgroup": "production-machine",
+    "icon": "__space-age__/graphics/icons/biolab.png",
+    "stackSize": 5,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "biolab",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "lab",
+            "amount": 1,
+            "weightRatio": 0.1388888888888889
+          },
+          {
+            "name": "biter-egg",
+            "amount": 10,
+            "weightRatio": 0.027777777777777776
+          },
+          {
+            "name": "refined-concrete",
+            "amount": 25,
+            "weightRatio": 0.3472222222222222
+          },
+          {
+            "name": "capture-robot-rocket",
+            "amount": 2,
+            "weightRatio": 0.2777777777777778
+          },
+          {
+            "name": "uranium-235",
+            "amount": 3,
+            "weightRatio": 0.20833333333333334
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "captive-biter-spawner",
+    "subgroup": "agriculture",
+    "icon": "__space-age__/graphics/icons/captive-biter-spawner.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "biter-egg",
+    "subgroup": "agriculture-products",
+    "icon": "__space-age__/graphics/icons/biter-egg.png",
+    "stackSize": 100,
+    "rocketCapacity": 500,
+    "alternatives": [
+      {
+        "name": "biter-egg",
+        "yield": 5,
+        "ingredients": []
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "pentapod-egg",
+    "subgroup": "agriculture-products",
+    "icon": "__space-age__/graphics/icons/pentapod-egg.png",
+    "stackSize": 20,
+    "rocketCapacity": 200,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "carbon-fiber",
+    "subgroup": "agriculture-products",
+    "icon": "__space-age__/graphics/icons/carbon-fiber.png",
+    "stackSize": 100,
+    "rocketCapacity": 500,
+    "alternatives": [
+      {
+        "name": "carbon-fiber",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "yumako-mash",
+            "amount": 10,
+            "weightRatio": 0.8333333333333334
+          },
+          {
+            "name": "carbon",
+            "amount": 1,
+            "weightRatio": 0.16666666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "stack-inserter",
+    "subgroup": "inserter",
+    "icon": "__space-age__/graphics/icons/stack-inserter.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "stack-inserter",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "bulk-inserter",
+            "amount": 1,
+            "weightRatio": 0.6185567010309279
+          },
+          {
+            "name": "processing-unit",
+            "amount": 1,
+            "weightRatio": 0.10309278350515463
+          },
+          {
+            "name": "carbon-fiber",
+            "amount": 2,
+            "weightRatio": 0.12371134020618557
+          },
+          {
+            "name": "jelly",
+            "amount": 10,
+            "weightRatio": 0.15463917525773196
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "rocket-turret",
+    "subgroup": "turret",
+    "icon": "__space-age__/graphics/icons/rocket-turret.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "rocket-turret",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "rocket-launcher",
+            "amount": 4,
+            "weightRatio": 0.8664259927797834
+          },
+          {
+            "name": "processing-unit",
+            "amount": 4,
+            "weightRatio": 0.014440433212996389
+          },
+          {
+            "name": "carbon-fiber",
+            "amount": 20,
+            "weightRatio": 0.04332129963898917
+          },
+          {
+            "name": "steel-plate",
+            "amount": 20,
+            "weightRatio": 0.05415162454873646
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 20,
+            "weightRatio": 0.021660649819494584
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "holmium-ore",
+    "subgroup": "fulgora-processes",
+    "icon": "__space-age__/graphics/icons/holmium-ore.png",
+    "stackSize": 50,
+    "rocketCapacity": 500,
+    "alternatives": [
+      {
+        "name": "scrap-recycling",
+        "yield": 0.01,
+        "ingredients": [
+          {
+            "name": "scrap",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "holmium-plate",
+    "subgroup": "fulgora-processes",
+    "icon": "__space-age__/graphics/icons/holmium-plate.png",
+    "stackSize": 100,
+    "rocketCapacity": 1000,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "lithium",
+    "subgroup": "aquilo-processes",
+    "icon": "__space-age__/graphics/icons/lithium.png",
+    "stackSize": 50,
+    "rocketCapacity": 250,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "lithium-plate",
+    "subgroup": "aquilo-processes",
+    "icon": "__space-age__/graphics/icons/lithium-plate.png",
+    "stackSize": 100,
+    "rocketCapacity": 500,
+    "alternatives": [
+      {
+        "name": "lithium-plate",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "lithium",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "scrap",
+    "subgroup": "fulgora-processes",
+    "icon": "__space-age__/graphics/icons/scrap.png",
+    "stackSize": 50,
+    "rocketCapacity": 500,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "lightning-rod",
+    "subgroup": "environmental-protection",
+    "icon": "__space-age__/graphics/icons/lightning-rod.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "lightning-rod",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "copper-cable",
+            "amount": 12,
+            "weightRatio": 0.0967741935483871
+          },
+          {
+            "name": "steel-plate",
+            "amount": 8,
+            "weightRatio": 0.6451612903225806
+          },
+          {
+            "name": "stone-brick",
+            "amount": 4,
+            "weightRatio": 0.25806451612903225
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "lightning-collector",
+    "subgroup": "environmental-protection",
+    "icon": "__space-age__/graphics/icons/lightning-collector.png",
+    "stackSize": 20,
+    "rocketCapacity": 20,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "heating-tower",
+    "subgroup": "environmental-protection",
+    "icon": "__space-age__/graphics/icons/heating-tower.png",
+    "stackSize": 20,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "heating-tower",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "boiler",
+            "amount": 2,
+            "weightRatio": 0.11764705882352941
+          },
+          {
+            "name": "heat-pipe",
+            "amount": 5,
+            "weightRatio": 0.29411764705882354
+          },
+          {
+            "name": "concrete",
+            "amount": 20,
+            "weightRatio": 0.5882352941176471
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "electromagnetic-plant",
+    "subgroup": "production-machine",
+    "icon": "__space-age__/graphics/icons/electromagnetic-plant.png",
+    "stackSize": 20,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "electromagnetic-plant",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "holmium-plate",
+            "amount": 150,
+            "weightRatio": 0.1592920353982301
+          },
+          {
+            "name": "steel-plate",
+            "amount": 50,
+            "weightRatio": 0.13274336283185842
+          },
+          {
+            "name": "processing-unit",
+            "amount": 50,
+            "weightRatio": 0.17699115044247787
+          },
+          {
+            "name": "refined-concrete",
+            "amount": 50,
+            "weightRatio": 0.5309734513274337
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "superconductor",
+    "subgroup": "fulgora-processes",
+    "icon": "__space-age__/graphics/icons/superconductor.png",
+    "stackSize": 200,
+    "rocketCapacity": 1000,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "supercapacitor",
+    "subgroup": "fulgora-processes",
+    "icon": "__space-age__/graphics/icons/supercapacitor.png",
+    "stackSize": 100,
+    "rocketCapacity": 500,
+    "alternatives": []
+  },
+  {
+    "type": "gun",
+    "name": "teslagun",
+    "subgroup": "gun",
+    "icon": "__space-age__/graphics/icons/teslagun.png",
+    "stackSize": 5,
+    "rocketCapacity": 5,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "tesla-turret",
+    "subgroup": "turret",
+    "icon": "__space-age__/graphics/icons/tesla-turret.png",
+    "stackSize": 10,
+    "rocketCapacity": 10,
+    "alternatives": []
+  },
+  {
+    "type": "ammo",
+    "name": "tesla-ammo",
+    "subgroup": "ammo",
+    "icon": "__space-age__/graphics/icons/tesla-ammo.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "quantum-processor",
+    "subgroup": "aquilo-processes",
+    "icon": "__space-age__/graphics/icons/quantum-processor.png",
+    "stackSize": 100,
+    "rocketCapacity": 200,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "fusion-reactor-equipment",
+    "subgroup": "equipment",
+    "icon": "__space-age__/graphics/icons/fusion-reactor-equipment.png",
+    "stackSize": 20,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "fusion-reactor-equipment",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "fission-reactor-equipment",
+            "amount": 1,
+            "weightRatio": 0.0847457627118644
+          },
+          {
+            "name": "fusion-power-cell",
+            "amount": 10,
+            "weightRatio": 0.06779661016949153
+          },
+          {
+            "name": "tungsten-plate",
+            "amount": 250,
+            "weightRatio": 0.3389830508474576
+          },
+          {
+            "name": "carbon-fiber",
+            "amount": 100,
+            "weightRatio": 0.06779661016949153
+          },
+          {
+            "name": "supercapacitor",
+            "amount": 25,
+            "weightRatio": 0.01694915254237288
+          },
+          {
+            "name": "quantum-processor",
+            "amount": 250,
+            "weightRatio": 0.423728813559322
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "fusion-power-cell",
+    "subgroup": "aquilo-processes",
+    "icon": "__space-age__/graphics/icons/fusion-power-cell.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "fusion-reactor",
+    "subgroup": "energy",
+    "icon": "__space-age__/graphics/icons/fusion-reactor.png",
+    "stackSize": 1,
+    "rocketCapacity": 1,
+    "alternatives": [
+      {
+        "name": "fusion-reactor",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "tungsten-plate",
+            "amount": 200,
+            "weightRatio": 0.35555555555555557
+          },
+          {
+            "name": "superconductor",
+            "amount": 200,
+            "weightRatio": 0.08888888888888889
+          },
+          {
+            "name": "quantum-processor",
+            "amount": 250,
+            "weightRatio": 0.5555555555555556
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "fusion-generator",
+    "subgroup": "energy",
+    "icon": "__space-age__/graphics/icons/fusion-generator.png",
+    "stackSize": 5,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "fusion-generator",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "tungsten-plate",
+            "amount": 100,
+            "weightRatio": 0.5333333333333333
+          },
+          {
+            "name": "superconductor",
+            "amount": 100,
+            "weightRatio": 0.13333333333333333
+          },
+          {
+            "name": "quantum-processor",
+            "amount": 50,
+            "weightRatio": 0.3333333333333333
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "cryogenic-plant",
+    "subgroup": "production-machine",
+    "icon": "__space-age__/graphics/icons/cryogenic-plant.png",
+    "stackSize": 20,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "cryogenic-plant",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "refined-concrete",
+            "amount": 40,
+            "weightRatio": 0.759493670886076
+          },
+          {
+            "name": "superconductor",
+            "amount": 20,
+            "weightRatio": 0.0379746835443038
+          },
+          {
+            "name": "processing-unit",
+            "amount": 20,
+            "weightRatio": 0.12658227848101264
+          },
+          {
+            "name": "lithium-plate",
+            "amount": 20,
+            "weightRatio": 0.0759493670886076
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "spoilage",
+    "subgroup": "agriculture-processes",
+    "icon": "__space-age__/graphics/icons/spoilage.png",
+    "stackSize": 200,
+    "rocketCapacity": 2000,
+    "alternatives": [
+      {
+        "name": "copper-bacteria",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "yumako-mash",
+            "amount": 3,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "iron-bacteria",
+        "yield": 4,
+        "ingredients": [
+          {
+            "name": "jelly",
+            "amount": 6,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "ice-platform",
+    "subgroup": "terrain",
+    "icon": "__space-age__/graphics/icons/ice-platform.png",
+    "stackSize": 100,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "foundation",
+    "subgroup": "terrain",
+    "icon": "__space-age__/graphics/icons/foundation.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "tree-seed",
+    "subgroup": "nauvis-agriculture",
+    "icon": "__space-age__/graphics/icons/tree-seed.png",
+    "stackSize": 10,
+    "rocketCapacity": 100,
+    "alternatives": [
+      {
+        "name": "wood-processing",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "wood",
+            "amount": 2,
+            "weightRatio": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "module",
+    "name": "quality-module",
+    "subgroup": "module",
+    "icon": "__quality__/graphics/icons/quality-module.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "quality-module",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 5,
+            "weightRatio": 0.3333333333333333
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.6666666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "module",
+    "name": "quality-module-2",
+    "subgroup": "module",
+    "icon": "__quality__/graphics/icons/quality-module-2.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "quality-module-2",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "quality-module",
+            "amount": 4,
+            "weightRatio": 0.7868852459016394
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.049180327868852465
+          },
+          {
+            "name": "processing-unit",
+            "amount": 5,
+            "weightRatio": 0.16393442622950818
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "module",
+    "name": "quality-module-3",
+    "subgroup": "module",
+    "icon": "__quality__/graphics/icons/quality-module-3.png",
+    "stackSize": 50,
+    "rocketCapacity": 50,
+    "alternatives": [
+      {
+        "name": "quality-module-3",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "quality-module-2",
+            "amount": 4,
+            "weightRatio": 0.7792207792207793
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 5,
+            "weightRatio": 0.048701298701298704
+          },
+          {
+            "name": "processing-unit",
+            "amount": 5,
+            "weightRatio": 0.16233766233766234
+          },
+          {
+            "name": "superconductor",
+            "amount": 1,
+            "weightRatio": 0.009740259740259742
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "recycler",
+    "subgroup": "smelting-machine",
+    "icon": "__quality__/graphics/icons/recycler.png",
+    "stackSize": 20,
+    "rocketCapacity": 10,
+    "alternatives": [
+      {
+        "name": "recycler",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "processing-unit",
+            "amount": 6,
+            "weightRatio": 0.06451612903225806
+          },
+          {
+            "name": "steel-plate",
+            "amount": 20,
+            "weightRatio": 0.16129032258064516
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 40,
+            "weightRatio": 0.12903225806451613
+          },
+          {
+            "name": "concrete",
+            "amount": 20,
+            "weightRatio": 0.6451612903225806
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "rail-planner",
+    "name": "rail-ramp",
+    "subgroup": "train-transport",
+    "icon": "__elevated-rails__/graphics/icons/rail-ramp.png",
+    "stackSize": 10,
+    "rocketCapacity": 1.8099547511312217,
+    "alternatives": [
+      {
+        "name": "rail-ramp",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "refined-concrete",
+            "amount": 100,
+            "weightRatio": 0.9049773755656109
+          },
+          {
+            "name": "rail",
+            "amount": 8,
+            "weightRatio": 0.07239819004524888
+          },
+          {
+            "name": "steel-plate",
+            "amount": 10,
+            "weightRatio": 0.02262443438914027
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "name": "rail-support",
+    "subgroup": "train-transport",
+    "icon": "__elevated-rails__/graphics/icons/rail-support.png",
+    "stackSize": 20,
+    "rocketCapacity": 5,
+    "alternatives": [
+      {
+        "name": "rail-support",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "refined-concrete",
+            "amount": 20,
+            "weightRatio": 0.8888888888888888
+          },
+          {
+            "name": "steel-plate",
+            "amount": 10,
+            "weightRatio": 0.1111111111111111
+          }
+        ]
+      }
+    ]
+  }
+]

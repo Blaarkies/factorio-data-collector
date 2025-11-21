@@ -1,1 +1,48 @@
-<h1>sandbox page</h1>
+<input
+  list="factorio-items"
+  placeholder="Search for item"
+  [formControl]="controlItemSelector"
+/>
+<datalist id="factorio-items">
+  @for (item of items(); track item.name) {
+    <option [value]="item.name"></option>
+  }
+</datalist>
+
+<br/><br/>
+<div class="icon-list">
+  @for (item of items(); track item.name) {
+    <app-inventory-item
+      [item]="item"
+      [isInteractive]="true"
+      (click)="itemClick$.next(item)"
+    />
+  }
+</div>
+<br/>
+
+@let item = info();
+@if (item) {
+  <div class="payload-container">
+    <div class="hint">1 full rocket payload</div>
+    <app-inventory-item
+      [item]="item"
+      [count]="item.rocketCapacity"
+    />
+  </div>
+
+  @for (alternative of item.enrichedAlternatives; track alternative.name) {
+    <div class="payload-container">
+    <div class="hint">1 full rocket payload</div>
+    <app-item-alternative
+      [mainItem]="item"
+      [alternative]="alternative"
+    />
+    </div>
+  }
+
+<!--  <pre style="font-size: var(&#45;&#45;font-size-1)">-->
+<!--{{ item | json }}-->
+<!--  </pre>-->
+}
+

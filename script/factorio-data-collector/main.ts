@@ -1,50 +1,50 @@
-import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { parseLua } from './parser/parse-lua';
-import { processItem, requiredItemProperties } from './parser/parse-item';
-import { processRecipe, requiredRecipeProperties } from './parser/parse-recipe';
+import { arrayToHash } from './common/hash.ts';
+import { getAsset, writeOutputs } from './common/disk.ts';
+import { getScriptPaths } from './common/path.ts';
+import { existsSync } from 'node:fs';
+import type { EnrichedItem } from './enrich/type.ts';
+import { collectData } from './collect-data.ts';
 
-process.chdir('../..');
-console.log('CWD: ', process.cwd());
+(async () => {
+  let enrichedItems = await collectData();
 
-let gitFD = 'assets/';
-let itemB = gitFD + 'base/prototypes/item.lua';
-let itemSA = gitFD + 'space-age/prototypes/item.lua';
-let recipeB = gitFD + 'base/prototypes/recipe.lua';
-let recipeSA = gitFD + 'space-age/prototypes/recipe.lua';
+  let {oldMetadata, metadata} = await getMetadata(enrichedItems);
+
+  let newHash = JSON.stringify(metadata.hash);
+  let oldHash = JSON.stringify(oldMetadata.hash);
+  if (oldHash === newHash) {
+    console.log('✅ Results are the same, no need to redeploy');
+    process.exit(1);
+  }
+
+  writeOutputs(
+    {name: 'enriched-items.json', data: enrichedItems},
+    {name: 'metadata.json', data: metadata},
+  );
+
+  // TODO: run git commit
+})();
 
 
-type Item = {}
-function readItems(path: string): Item[] {
-  let content = readFileSync(path, 'utf8');
-  return parseLua(content, requiredItemProperties, processItem);
+type Metadata = { date: string; hash: { enrichedItems: number } };
+
+async function getMetadata(enrichedItems: EnrichedItem[])
+  : Promise<{ metadata: Metadata; oldMetadata: Metadata }> {
+  let {pathToDataAsset} = getScriptPaths();
+
+  let oldMetadataPath = join(pathToDataAsset, 'metadata.json');
+  let oldMetadataString = existsSync(oldMetadataPath)
+    ? await getAsset(oldMetadataPath)
+    : '{}';
+  let oldMetadata = JSON.parse(oldMetadataString);
+
+  let metadata = {
+    date: new Date().toISOString(),
+    hash: {
+      enrichedItems: arrayToHash(enrichedItems),
+    },
+  };
+
+  return {oldMetadata, metadata};
 }
-
-
-type Recipe = {}
-function readRecipes(path: string): Recipe[] {
-  let content = readFileSync(path, 'utf8');
-  return parseLua(content, requiredRecipeProperties, processRecipe);
-}
-
-let items = [itemB, itemSA].flatMap(p => readItems(p))
-  .filter(i => !i.hidden).sort((a,b) => (a.weight ?? 0) - (b.weight ?? 0));
-let recipes = [recipeB, recipeSA].flatMap(p => readRecipes(p));
-
-
-
-console.log(items);
-console.log(recipes);
-
-
-// writeFileSync(join(gitFD, 'items.json'),
-//   JSON.stringify(items, null, 2)
-//   , 'utf8');
-// writeFileSync(join(gitFD, 'recipes.json'),
-//   JSON.stringify(recipes, null, 2)
-//   , 'utf8');
-
-// let result = parseLuaV2(contents);
-// result.filter(i => !i.hidden).sort((a,b) => (a.weight ?? 0) - (b.weight ?? 0))
-
-

@@ -9,6 +9,7 @@ import { provideRouter } from '@angular/router';
 import { BootstrapCmp } from './bootstrap';
 import { routes } from '@app/bootstrap/routes';
 import { provideServiceWorker } from '@angular/service-worker';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 export async function bootstrapApp(): Promise<ApplicationRef> {
   return bootstrapApplication(BootstrapCmp, {
@@ -20,6 +21,7 @@ export async function bootstrapApp(): Promise<ApplicationRef> {
         enabled: !isDevMode(),
         registrationStrategy: 'registerWhenStable:30000',
       }),
+      provideHttpClient(withFetch()),
     ]
   });
 }

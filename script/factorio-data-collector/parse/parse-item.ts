@@ -1,10 +1,14 @@
-import { ValidProp } from '../type';
+import type { ValidProp } from './type-data.js';
+import type { FactorioItem } from '../game-data/type.ts';
+import { parseLuaItemsOrRecipes } from './parse-lua.ts';
+import { getDataExtendSection } from './lua-file-content-extract.ts';
 
 // Item properties to keep
-export const requiredItemProperties: ValidProp[] = [
+const requiredItemProperties: ValidProp[] = [
   'type',
   'name',
   'subgroup',
+  'icon',
   'stack_size',
   'hidden',
   'weight',
@@ -22,7 +26,7 @@ const numberFields = new Set<ValidProp>([
   'fuel_value'
 ]);
 
-export function processItem(entry: [ValidProp, string])
+function processItem(entry: [ValidProp, string])
   : [ValidProp, number | string] {
   let [key, value] = entry;
   if (!numberFields.has(key)) {
@@ -42,10 +46,17 @@ export function processItem(entry: [ValidProp, string])
     : value;
 
   let result = new Function(
-    `let [grams, kg, tons,
-            kJ, MJ, GJ] = [1e-3, 1, 1e3,
-                          1e3, 1e6, 1e9];
+    `let [grams,  kg, tons,  kJ,  MJ,  GJ] =
+         [    1, 1e3,  1e6, 1e3, 1e6, 1e9];
        return ${cleanValue};`)();
 
   return [key, Number(result)];
+}
+
+export function parseItemsFromContent(content: string): FactorioItem[] {
+  let fragileContents = getDataExtendSection(content);
+  return parseLuaItemsOrRecipes(
+    fragileContents,
+    requiredItemProperties,
+    processItem) as FactorioItem[];
 }

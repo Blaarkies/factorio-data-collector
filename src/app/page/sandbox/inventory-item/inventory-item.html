@@ -1,0 +1,18 @@
+<div
+  class="icon-image"
+  [style.--icon-url-path]="'url(\'icons/' + item().icon + '\')'"
+  [class.icon-interactive]="isInteractive()"
+  (pointerenter)="isHover()"
+  (pointerleave)="isHover(false)"
+>
+  <div class="item-count">{{ countFormatted() }}</div>
+</div>
+
+@if (isHovering()) {
+  <app-inventory-tooltip
+    class="make-overlay"
+    [item]="item()"
+    [top]="top()"
+    [left]="left()"
+  />
+}

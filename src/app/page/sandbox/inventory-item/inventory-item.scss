@@ -1,0 +1,34 @@
+.icon-image {
+  background: var(--icon-url-path);
+  background-size: contain;
+  width: 46px;
+  aspect-ratio: 1;
+
+  position: relative;
+
+  .item-count {
+    color: oklch(1 0 0);
+    font-size: var(--font-size-2);
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 4px;
+    line-height: 1em;
+
+    text-shadow: -1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    1px 1px 0 #000;
+  }
+}
+
+.icon-interactive {
+  cursor: pointer;
+  transition: outline .15s ease-in;
+  outline: 1px solid transparent;
+
+  &:hover {
+    outline-color: gray;
+  }
+}

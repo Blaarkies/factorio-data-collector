@@ -1,9 +1,17 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "skipLibCheck": true
+    "module": "NodeNext",
+    "outDir": "../dist-data-collector",
+    "esModuleInterop": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "noEmitOnError": false,
+    "allowImportingTsExtensions": true
   },
   "include": [
-    "main.ts"
+    "main.ts",
+    "main.test.ts",
+    "generate-icons.ts"
   ]
 }

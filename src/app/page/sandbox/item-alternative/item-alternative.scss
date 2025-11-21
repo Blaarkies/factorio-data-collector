@@ -1,0 +1,14 @@
+.layout {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.equal {
+  font-size: var(--font-size-5);
+}
+
+.ingredients {
+  display: flex;
+  gap: 8px;
+}

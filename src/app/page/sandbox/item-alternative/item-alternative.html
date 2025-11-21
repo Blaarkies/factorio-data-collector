@@ -1,0 +1,20 @@
+@let alt = alternative();
+
+<div class="layout">
+
+  <app-inventory-item
+    [item]="mainItem()"
+    [count]="alt.craftCount"
+  />
+
+  <div class="equal">=</div>
+
+  <div class="ingredients">
+    @for (itemCount of ingredientItemsWithCount(); track itemCount.item) {
+      <app-inventory-item
+        [item]="itemCount.item"
+        [count]="itemCount.count"
+      />
+    }
+  </div>
+</div>

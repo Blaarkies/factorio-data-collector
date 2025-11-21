@@ -10,7 +10,15 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "update-factorio-data": "tsc -p script/factorio-data-collector/tsconfig.json"
+    "update-css-vars"
+    : "node src/style/setup/variable-sets-generator.js variable-sets.scss",
+    "build-prod": "pnpm update-factorio-data && ng build",
+    "update-factorio-data"
+    : "node --no-warnings script/factorio-data-collector/main.ts",
+    "test-factorio-data"
+    : "node --no-warnings script/factorio-data-collector/main.test.ts",
+    "generate-icons"
+    : "node --no-warnings script/factorio-data-collector/generate-icons.ts"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +30,6 @@
     "@angular/platform-browser": "20.1.0",
     "@angular/router": "20.1.0",
     "@angular/service-worker": "20.1.0",
-    "dexie": "4.2.0",
     "rxjs": "7.8.0"
   },
   "devDependencies": {
@@ -30,9 +37,11 @@
     "@angular/cli": "20.1.5",
     "@angular/compiler-cli": "20.1.0",
     "@ng-web-apis/common": "4.12.0",
+    "luaparse": "0.3.1",
     "typescript": "5.8.2",
     "tslib": "2.3.0",
-    "luaparse": "0.3.1",
-    "@types/node": "24.10.1"
+    "@types/node": "24.10.1",
+    "@types/sharp": "0.32.0",
+    "sharp": "0.34.5"
   }
 }

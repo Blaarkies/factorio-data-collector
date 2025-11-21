@@ -1,0 +1,13 @@
+.pane {
+  font-size: var(--font-size-1);
+  padding: 6px 10px;
+
+  position: absolute;
+  top: var(--top);
+  left: var(--left);
+  z-index: 1;
+
+  background: var(--color-panel-3);
+  border: 1px solid var(--color-border-3);
+  box-sizing: content-box;
+}

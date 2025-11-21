@@ -4,6 +4,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
+      "@script/*": [
+        "./script/factorio-data-collector/*"
+      ],
       "@app/*": [
         "./src/app/*"
       ],

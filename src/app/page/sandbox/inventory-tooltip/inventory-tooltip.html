@@ -1,0 +1,15 @@
+@let it = item();
+<div class="pane"
+  [style.--top.px]="top()"
+  [style.--left.px]="left()"
+>
+
+  <div class="icon"></div>
+
+  <div>Name: {{it.name}}</div>
+  <div>Rocket Capacity: {{it.rocketCapacity}}</div>
+  <div>Stack Size: {{it.stackSize}}</div>
+  <div>Subgroup: {{it.subgroup}}</div>
+  <div>Type: {{it.type}}</div>
+
+</div>

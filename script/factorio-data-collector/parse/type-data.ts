@@ -1,9 +1,8 @@
-export const EOL = '\n';
-
 export type ValidProp =
   | 'type'
   | 'name'
   | 'subgroup'
+  | 'icon'
   | 'stack_size'
   | 'hidden'
   | 'weight'
@@ -18,13 +17,4 @@ export type ValidProp =
   | 'allow_productivity'
   | 'temperature'
   | 'amount'
-
-
-export type ItemInJson = Record<ValidProp, string>;
-
-export type FactorioItem = {
-  name: string;
-  type: string;
-  subgroup: string;
-  rocketCapacity: number;
-};
+  | 'probability'
