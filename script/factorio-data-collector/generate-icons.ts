@@ -4,10 +4,14 @@ import sharp from 'sharp';
 import { getScriptPaths } from './common/path.ts';
 import { collectData } from './collect-data.ts';
 
+function snipIconPath(path: string) {
+  return path.split('/').slice(3).join('/');
+}
+
 (async () => {
   let start = performance.now();
 
-  let {pathToRoot, pathToDataAsset} = getScriptPaths();
+  let {pathToRoot} = getScriptPaths();
   let assetPath = join(pathToRoot, 'factorio-icons');
   let iconDestinationPath = join(pathToRoot, 'asset', 'icons');
 
@@ -17,24 +21,39 @@ import { collectData } from './collect-data.ts';
 
   let items = await collectData({withIconPaths: true});
 
+  let barrelIconPath = snipIconPath(items.find(i => i.name === 'barrel').icon);
+  let barrelIcon = await createWebpIcon(join(assetPath, barrelIconPath));
+  let barrelIconBuffer = await barrelIcon.toBuffer();
+
   for (let item of items) {
-    let iconPath = item.icon.split('/').slice(3).join('/');
-    await createWebpIcon(
-      join(assetPath, iconPath),
-      join(iconDestinationPath, `${item.name}.webp`));
+    let iconPath = snipIconPath(item.icon);
+    let origin = join(assetPath, iconPath);
+    let destination = join(iconDestinationPath, `${item.name}.webp`);
+
+    let icon = await createWebpIcon(origin);
+    if (item.subgroup === 'barrel') {
+      icon = icon.composite([
+        {input: await icon.toBuffer()},
+        {input: barrelIconBuffer, blend: 'overlay'},
+      ]);
+    }
+
+    await icon
+      .webp({preset: 'icon'})
+      .toFile(destination);
   }
 
   let end = performance.now();
-  let time = ((end - start)/1e3).toFixed(2);
+  let time = ((end - start) / 1e3).toFixed(2);
   console.log(`Converted ${items.length} images to webp format in ${time}s`);
 })();
 
-async function createWebpIcon(origin: string, destination: string) {
-  await sharp(readFileSync(origin))
-    .resize({width: 64, height: 64, position: 'left'})
-    .webp({preset: 'icon'})
-    .toFile(destination);
+async function createWebpIcon(origin: string)
+  : Promise<sharp.Sharp> {
+  let file = readFileSync(origin);
+  return sharp(file).resize({width: 64, height: 64, position: 'left'})
 }
+
 
 // image sprites? 17x17 sprite can handle all current 283 items
 

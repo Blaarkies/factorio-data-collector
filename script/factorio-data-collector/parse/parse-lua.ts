@@ -18,7 +18,7 @@ import type {
 
 type Value = boolean | string | number | object;
 
-function parseValue(expression: ExpressionValue): unknown {
+export function parseValue(expression: ExpressionValue): unknown {
   if (isStringLiteral(expression)) {
     return expression.raw.slice(1, -1);
   }
@@ -60,6 +60,9 @@ export function parseExpression(
     const fields = isTableConstructorExpression(expression)
       ? expression.fields
       : expression.value.fields;
+    if (!fields) {
+      return expression.value.value;
+    }
     const filteredFields = filterKeys
       ? fields.filter(f => isTableKeyString(f)
         ? filterKeys.includes((f as TableKeyString).key.name as ValidProp)

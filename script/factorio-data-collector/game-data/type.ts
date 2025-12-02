@@ -1,5 +1,5 @@
 export type FactorioItem = Partial<OptionalFactorioItem> & {
-  type: string
+  type: 'item'
   name: string
   subgroup: string
   icon: string

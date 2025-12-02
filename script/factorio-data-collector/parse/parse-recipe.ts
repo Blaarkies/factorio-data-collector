@@ -3,8 +3,8 @@ import type { FactorioRecipe } from '../game-data/type.ts';
 import { parseLuaItemsOrRecipes } from './parse-lua.ts';
 import { getDataExtendSection } from './lua-file-content-extract.ts';
 
-// Item properties to keep
-const requiredRecipeProperties: ValidProp[] = [
+// Properties to keep
+const requiredProperties: ValidProp[] = [
   'type',
   'name',
   'category',
@@ -45,6 +45,6 @@ export function parseRecipesFromContent(content: string): FactorioRecipe[] {
   let fragileContents = getDataExtendSection(content);
   return parseLuaItemsOrRecipes(
     fragileContents,
-    requiredRecipeProperties,
+    requiredProperties,
     processRecipe) as FactorioRecipe[];
 }

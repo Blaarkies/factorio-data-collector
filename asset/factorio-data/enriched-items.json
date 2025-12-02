@@ -33,7 +33,29 @@
     "subgroup": "raw-resource",
     "stackSize": 50,
     "rocketCapacity": 500,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "coal-synthesis",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "carbon",
+            "amount": 5,
+            "weightRatio": 0.625
+          },
+          {
+            "name": "sulfur",
+            "amount": 1,
+            "weightRatio": 0.125
+          },
+          {
+            "name": "water-barrel",
+            "amount": 0.2,
+            "weightRatio": 0.25
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -744,36 +766,34 @@
     ]
   },
   {
-    "type": "item",
-    "name": "red-wire",
-    "subgroup": "spawnables",
-    "stackSize": 1,
-    "rocketCapacity": 10000,
-    "alternatives": []
-  },
-  {
-    "type": "item",
-    "name": "green-wire",
-    "subgroup": "spawnables",
-    "stackSize": 1,
-    "rocketCapacity": 10000,
-    "alternatives": []
-  },
-  {
-    "type": "item",
-    "name": "copper-wire",
-    "subgroup": "spawnables",
-    "stackSize": 1,
-    "rocketCapacity": 10000,
-    "alternatives": []
-  },
-  {
     "type": "capsule",
     "name": "raw-fish",
     "subgroup": "raw-resource",
     "stackSize": 100,
     "rocketCapacity": 300,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "fish-breeding",
+        "yield": 3,
+        "ingredients": [
+          {
+            "name": "raw-fish",
+            "amount": 2,
+            "weightRatio": 0.08695652173913045
+          },
+          {
+            "name": "nutrients",
+            "amount": 100,
+            "weightRatio": 0.6521739130434784
+          },
+          {
+            "name": "water-barrel",
+            "amount": 2,
+            "weightRatio": 0.26086956521739135
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "repair-tool",
@@ -849,14 +869,6 @@
         ]
       }
     ]
-  },
-  {
-    "type": "blueprint",
-    "name": "blueprint",
-    "subgroup": "tool",
-    "stackSize": 1,
-    "rocketCapacity": 10000,
-    "alternatives": []
   },
   {
     "type": "tool",
@@ -1037,6 +1049,39 @@
     "rocketCapacity": 1000,
     "alternatives": [
       {
+        "name": "solid-fuel-from-light-oil",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "light-oil-barrel",
+            "amount": 0.2,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "solid-fuel-from-petroleum-gas",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "petroleum-gas-barrel",
+            "amount": 0.4,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "solid-fuel-from-heavy-oil",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "heavy-oil-barrel",
+            "amount": 0.4,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
         "name": "scrap-recycling",
         "yield": 0.07,
         "ingredients": [
@@ -1055,7 +1100,45 @@
     "subgroup": "intermediate-product",
     "stackSize": 20,
     "rocketCapacity": 100,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "rocket-fuel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "solid-fuel",
+            "amount": 10,
+            "weightRatio": 0.8333333333333334
+          },
+          {
+            "name": "light-oil-barrel",
+            "amount": 0.2,
+            "weightRatio": 0.16666666666666666
+          }
+        ]
+      },
+      {
+        "name": "rocket-fuel-from-jelly",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "water-barrel",
+            "amount": 0.6,
+            "weightRatio": 0.2608695652173913
+          },
+          {
+            "name": "jelly",
+            "amount": 30,
+            "weightRatio": 0.6521739130434783
+          },
+          {
+            "name": "bioflux",
+            "amount": 2,
+            "weightRatio": 0.08695652173913043
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -1450,6 +1533,27 @@
     "rocketCapacity": 100,
     "alternatives": [
       {
+        "name": "concrete",
+        "yield": 10,
+        "ingredients": [
+          {
+            "name": "stone-brick",
+            "amount": 5,
+            "weightRatio": 0.3125
+          },
+          {
+            "name": "iron-ore",
+            "amount": 1,
+            "weightRatio": 0.0625
+          },
+          {
+            "name": "water-barrel",
+            "amount": 2,
+            "weightRatio": 0.625
+          }
+        ]
+      },
+      {
         "name": "scrap-recycling",
         "yield": 0.06,
         "ingredients": [
@@ -1468,7 +1572,34 @@
     "subgroup": "terrain",
     "stackSize": 100,
     "rocketCapacity": 100,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "refined-concrete",
+        "yield": 10,
+        "ingredients": [
+          {
+            "name": "concrete",
+            "amount": 20,
+            "weightRatio": 0.8830022075055187
+          },
+          {
+            "name": "iron-stick",
+            "amount": 8,
+            "weightRatio": 0.017660044150110375
+          },
+          {
+            "name": "steel-plate",
+            "amount": 1,
+            "weightRatio": 0.011037527593818985
+          },
+          {
+            "name": "water-barrel",
+            "amount": 2,
+            "weightRatio": 0.08830022075055188
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -1649,7 +1780,29 @@
     "subgroup": "belt",
     "stackSize": 100,
     "rocketCapacity": 100,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "express-transport-belt",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "iron-gear-wheel",
+            "amount": 10,
+            "weightRatio": 0.4166666666666667
+          },
+          {
+            "name": "fast-transport-belt",
+            "amount": 1,
+            "weightRatio": 0.4166666666666667
+          },
+          {
+            "name": "lubricant-barrel",
+            "amount": 0.4,
+            "weightRatio": 0.16666666666666666
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -2027,7 +2180,29 @@
     "subgroup": "belt",
     "stackSize": 50,
     "rocketCapacity": 50,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "express-underground-belt",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "iron-gear-wheel",
+            "amount": 80,
+            "weightRatio": 0.625
+          },
+          {
+            "name": "fast-underground-belt",
+            "amount": 2,
+            "weightRatio": 0.3125
+          },
+          {
+            "name": "lubricant-barrel",
+            "amount": 0.8,
+            "weightRatio": 0.0625
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -2095,7 +2270,34 @@
     "subgroup": "belt",
     "stackSize": 50,
     "rocketCapacity": 50,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "express-splitter",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "fast-splitter",
+            "amount": 1,
+            "weightRatio": 0.35714285714285715
+          },
+          {
+            "name": "iron-gear-wheel",
+            "amount": 10,
+            "weightRatio": 0.17857142857142858
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 10,
+            "weightRatio": 0.17857142857142858
+          },
+          {
+            "name": "lubricant-barrel",
+            "amount": 1.6,
+            "weightRatio": 0.2857142857142857
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -2145,6 +2347,27 @@
     "stackSize": 100,
     "rocketCapacity": 300,
     "alternatives": [
+      {
+        "name": "processing-unit",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "electronic-circuit",
+            "amount": 20,
+            "weightRatio": 0.7692307692307693
+          },
+          {
+            "name": "advanced-circuit",
+            "amount": 2,
+            "weightRatio": 0.15384615384615385
+          },
+          {
+            "name": "sulfuric-acid-barrel",
+            "amount": 0.1,
+            "weightRatio": 0.07692307692307693
+          }
+        ]
+      },
       {
         "name": "scrap-recycling",
         "yield": 0.02,
@@ -2579,30 +2802,6 @@
     ]
   },
   {
-    "type": "upgrade-item",
-    "name": "upgrade-planner",
-    "subgroup": "tool",
-    "stackSize": 1,
-    "rocketCapacity": 10000,
-    "alternatives": []
-  },
-  {
-    "type": "deconstruction-item",
-    "name": "deconstruction-planner",
-    "subgroup": "tool",
-    "stackSize": 1,
-    "rocketCapacity": 10000,
-    "alternatives": []
-  },
-  {
-    "type": "blueprint-book",
-    "name": "blueprint-book",
-    "subgroup": "tool",
-    "stackSize": 1,
-    "rocketCapacity": 10000,
-    "alternatives": []
-  },
-  {
     "type": "item",
     "name": "pumpjack",
     "subgroup": "extraction-machine",
@@ -2720,6 +2919,22 @@
     "rocketCapacity": 1000,
     "alternatives": [
       {
+        "name": "sulfur",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "water-barrel",
+            "amount": 0.6,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "petroleum-gas-barrel",
+            "amount": 0.6,
+            "weightRatio": 0.5
+          }
+        ]
+      },
+      {
         "name": "biosulfur",
         "yield": 2,
         "ingredients": [
@@ -2765,6 +2980,105 @@
             "weightRatio": 1
           }
         ]
+      },
+      {
+        "name": "empty-water-barrel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "water-barrel",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "empty-sulfuric-acid-barrel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "sulfuric-acid-barrel",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "empty-crude-oil-barrel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "crude-oil-barrel",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "empty-heavy-oil-barrel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "heavy-oil-barrel",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "empty-light-oil-barrel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "light-oil-barrel",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "empty-petroleum-gas-barrel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "petroleum-gas-barrel",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "empty-lubricant-barrel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "lubricant-barrel",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "empty-fluoroketone-cold-barrel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "fluoroketone-cold-barrel",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
+      },
+      {
+        "name": "empty-fluoroketone-hot-barrel",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "fluoroketone-hot-barrel",
+            "amount": 1,
+            "weightRatio": 1
+          }
+        ]
       }
     ]
   },
@@ -2775,6 +3089,22 @@
     "stackSize": 100,
     "rocketCapacity": 2000,
     "alternatives": [
+      {
+        "name": "plastic-bar",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "petroleum-gas-barrel",
+            "amount": 0.4,
+            "weightRatio": 0.6666666666666666
+          },
+          {
+            "name": "coal",
+            "amount": 1,
+            "weightRatio": 0.3333333333333333
+          }
+        ]
+      },
       {
         "name": "bioplastic",
         "yield": 3,
@@ -2799,7 +3129,29 @@
     "subgroup": "intermediate-product",
     "stackSize": 50,
     "rocketCapacity": 400,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "electric-engine-unit",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "engine-unit",
+            "amount": 1,
+            "weightRatio": 0.38461538461538464
+          },
+          {
+            "name": "lubricant-barrel",
+            "amount": 0.3,
+            "weightRatio": 0.46153846153846156
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 2,
+            "weightRatio": 0.15384615384615385
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -2807,7 +3159,29 @@
     "subgroup": "raw-material",
     "stackSize": 50,
     "rocketCapacity": 500,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "explosives",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "sulfur",
+            "amount": 1,
+            "weightRatio": 0.2
+          },
+          {
+            "name": "coal",
+            "amount": 1,
+            "weightRatio": 0.4
+          },
+          {
+            "name": "water-barrel",
+            "amount": 0.2,
+            "weightRatio": 0.4
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -2816,6 +3190,27 @@
     "stackSize": 200,
     "rocketCapacity": 400,
     "alternatives": [
+      {
+        "name": "battery",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "sulfuric-acid-barrel",
+            "amount": 0.4,
+            "weightRatio": 0.6666666666666666
+          },
+          {
+            "name": "iron-plate",
+            "amount": 1,
+            "weightRatio": 0.16666666666666666
+          },
+          {
+            "name": "copper-plate",
+            "amount": 1,
+            "weightRatio": 0.16666666666666666
+          }
+        ]
+      },
       {
         "name": "scrap-recycling",
         "yield": 0.04,
@@ -3014,14 +3409,6 @@
         ]
       }
     ]
-  },
-  {
-    "type": "spidertron-remote",
-    "name": "spidertron-remote",
-    "subgroup": "spawnables",
-    "stackSize": 1,
-    "rocketCapacity": 10000,
-    "alternatives": []
   },
   {
     "type": "item",
@@ -3600,7 +3987,24 @@
     "subgroup": "ammo",
     "stackSize": 100,
     "rocketCapacity": 100,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "flamethrower-ammo",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "steel-plate",
+            "amount": 5,
+            "weightRatio": 0.38461538461538464
+          },
+          {
+            "name": "crude-oil-barrel",
+            "amount": 2,
+            "weightRatio": 0.6153846153846154
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "ammo",
@@ -4833,14 +5237,6 @@
     ]
   },
   {
-    "type": "capsule",
-    "name": "discharge-defense-remote",
-    "subgroup": "spawnables",
-    "stackSize": 1,
-    "rocketCapacity": 10000,
-    "alternatives": []
-  },
-  {
     "type": "item",
     "name": "gun-turret",
     "subgroup": "turret",
@@ -4969,14 +5365,6 @@
         ]
       }
     ]
-  },
-  {
-    "type": "capsule",
-    "name": "artillery-targeting-remote",
-    "subgroup": "spawnables",
-    "stackSize": 1,
-    "rocketCapacity": 10000,
-    "alternatives": []
   },
   {
     "type": "item",
@@ -5240,7 +5628,29 @@
     "subgroup": "science-pack",
     "stackSize": 200,
     "rocketCapacity": 1000,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "cryogenic-science-pack",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "ice",
+            "amount": 3,
+            "weightRatio": 0.4838709677419355
+          },
+          {
+            "name": "lithium-plate",
+            "amount": 1,
+            "weightRatio": 0.3225806451612903
+          },
+          {
+            "name": "fluoroketone-cold-barrel",
+            "amount": 0.12,
+            "weightRatio": 0.1935483870967742
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "tool",
@@ -5278,7 +5688,29 @@
     "subgroup": "belt",
     "stackSize": 100,
     "rocketCapacity": 50,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "turbo-transport-belt",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "tungsten-plate",
+            "amount": 5,
+            "weightRatio": 0.5882352941176471
+          },
+          {
+            "name": "express-transport-belt",
+            "amount": 1,
+            "weightRatio": 0.29411764705882354
+          },
+          {
+            "name": "lubricant-barrel",
+            "amount": 0.4,
+            "weightRatio": 0.11764705882352941
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -5286,7 +5718,29 @@
     "subgroup": "belt",
     "stackSize": 50,
     "rocketCapacity": 25,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "turbo-underground-belt",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "tungsten-plate",
+            "amount": 40,
+            "weightRatio": 0.7692307692307693
+          },
+          {
+            "name": "express-underground-belt",
+            "amount": 2,
+            "weightRatio": 0.19230769230769232
+          },
+          {
+            "name": "lubricant-barrel",
+            "amount": 0.8,
+            "weightRatio": 0.038461538461538464
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -5294,7 +5748,34 @@
     "subgroup": "belt",
     "stackSize": 50,
     "rocketCapacity": 25,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "turbo-splitter",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "express-splitter",
+            "amount": 1,
+            "weightRatio": 0.1948051948051948
+          },
+          {
+            "name": "tungsten-plate",
+            "amount": 15,
+            "weightRatio": 0.5844155844155844
+          },
+          {
+            "name": "processing-unit",
+            "amount": 2,
+            "weightRatio": 0.06493506493506493
+          },
+          {
+            "name": "lubricant-barrel",
+            "amount": 1.6,
+            "weightRatio": 0.15584415584415584
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "armor",
@@ -5808,6 +6289,22 @@
         ]
       },
       {
+        "name": "carbon",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "coal",
+            "amount": 2,
+            "weightRatio": 0.5
+          },
+          {
+            "name": "sulfuric-acid-barrel",
+            "amount": 0.4,
+            "weightRatio": 0.5
+          }
+        ]
+      },
+      {
         "name": "burnt-spoilage",
         "yield": 1,
         "ingredients": [
@@ -5870,7 +6367,29 @@
     "subgroup": "vulcanus-processes",
     "stackSize": 50,
     "rocketCapacity": 500,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "tungsten-carbide",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "tungsten-ore",
+            "amount": 2,
+            "weightRatio": 0.8695652173913043
+          },
+          {
+            "name": "sulfuric-acid-barrel",
+            "amount": 0.2,
+            "weightRatio": 0.08695652173913043
+          },
+          {
+            "name": "carbon",
+            "amount": 1,
+            "weightRatio": 0.043478260869565216
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -5878,7 +6397,39 @@
     "subgroup": "smelting-machine",
     "stackSize": 20,
     "rocketCapacity": 5,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "foundry",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "tungsten-carbide",
+            "amount": 50,
+            "weightRatio": 0.22522522522522523
+          },
+          {
+            "name": "steel-plate",
+            "amount": 50,
+            "weightRatio": 0.28153153153153154
+          },
+          {
+            "name": "electronic-circuit",
+            "amount": 30,
+            "weightRatio": 0.033783783783783786
+          },
+          {
+            "name": "refined-concrete",
+            "amount": 20,
+            "weightRatio": 0.45045045045045046
+          },
+          {
+            "name": "lubricant-barrel",
+            "amount": 0.4,
+            "weightRatio": 0.009009009009009009
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "gun",
@@ -5886,7 +6437,34 @@
     "subgroup": "gun",
     "stackSize": 1,
     "rocketCapacity": 1,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "railgun",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "tungsten-plate",
+            "amount": 10,
+            "weightRatio": 0.2631578947368421
+          },
+          {
+            "name": "superconductor",
+            "amount": 10,
+            "weightRatio": 0.06578947368421052
+          },
+          {
+            "name": "quantum-processor",
+            "amount": 20,
+            "weightRatio": 0.6578947368421053
+          },
+          {
+            "name": "fluoroketone-cold-barrel",
+            "amount": 0.2,
+            "weightRatio": 0.013157894736842105
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -5894,7 +6472,39 @@
     "subgroup": "turret",
     "stackSize": 10,
     "rocketCapacity": 1,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "railgun-turret",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "quantum-processor",
+            "amount": 100,
+            "weightRatio": 0.684931506849315
+          },
+          {
+            "name": "tungsten-plate",
+            "amount": 30,
+            "weightRatio": 0.1643835616438356
+          },
+          {
+            "name": "superconductor",
+            "amount": 50,
+            "weightRatio": 0.0684931506849315
+          },
+          {
+            "name": "carbon-fiber",
+            "amount": 20,
+            "weightRatio": 0.0547945205479452
+          },
+          {
+            "name": "fluoroketone-cold-barrel",
+            "amount": 2,
+            "weightRatio": 0.0273972602739726
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "ammo",
@@ -6219,7 +6829,39 @@
     "subgroup": "terrain",
     "stackSize": 100,
     "rocketCapacity": 14.869888475836431,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "overgrowth-yumako-soil",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "artificial-yumako-soil",
+            "amount": 2,
+            "weightRatio": 0.2041522491349481
+          },
+          {
+            "name": "yumako-seed",
+            "amount": 5,
+            "weightRatio": 0.3460207612456747
+          },
+          {
+            "name": "biter-egg",
+            "amount": 10,
+            "weightRatio": 0.1384083044982699
+          },
+          {
+            "name": "spoilage",
+            "amount": 50,
+            "weightRatio": 0.17301038062283736
+          },
+          {
+            "name": "water-barrel",
+            "amount": 2,
+            "weightRatio": 0.1384083044982699
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -6257,7 +6899,39 @@
     "subgroup": "terrain",
     "stackSize": 100,
     "rocketCapacity": 14.869888475836431,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "overgrowth-jellynut-soil",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "artificial-jellynut-soil",
+            "amount": 2,
+            "weightRatio": 0.2041522491349481
+          },
+          {
+            "name": "jellynut-seed",
+            "amount": 5,
+            "weightRatio": 0.3460207612456747
+          },
+          {
+            "name": "biter-egg",
+            "amount": 10,
+            "weightRatio": 0.1384083044982699
+          },
+          {
+            "name": "spoilage",
+            "amount": 50,
+            "weightRatio": 0.17301038062283736
+          },
+          {
+            "name": "water-barrel",
+            "amount": 2,
+            "weightRatio": 0.1384083044982699
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -6415,7 +7089,34 @@
     "subgroup": "agriculture",
     "stackSize": 1,
     "rocketCapacity": 1,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "captive-biter-spawner",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "biter-egg",
+            "amount": 10,
+            "weightRatio": 0.02247191011235955
+          },
+          {
+            "name": "capture-robot-rocket",
+            "amount": 1,
+            "weightRatio": 0.11235955056179775
+          },
+          {
+            "name": "uranium-235",
+            "amount": 15,
+            "weightRatio": 0.8426966292134831
+          },
+          {
+            "name": "fluoroketone-cold-barrel",
+            "amount": 2,
+            "weightRatio": 0.02247191011235955
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -6437,7 +7138,29 @@
     "subgroup": "agriculture-products",
     "stackSize": 20,
     "rocketCapacity": 200,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "pentapod-egg",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "pentapod-egg",
+            "amount": 1,
+            "weightRatio": 0.15625
+          },
+          {
+            "name": "nutrients",
+            "amount": 30,
+            "weightRatio": 0.46875
+          },
+          {
+            "name": "water-barrel",
+            "amount": 1.2,
+            "weightRatio": 0.375
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -6712,7 +7435,34 @@
     "subgroup": "fulgora-processes",
     "stackSize": 200,
     "rocketCapacity": 1000,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "superconductor",
+        "yield": 2,
+        "ingredients": [
+          {
+            "name": "holmium-plate",
+            "amount": 1,
+            "weightRatio": 0.2857142857142857
+          },
+          {
+            "name": "copper-plate",
+            "amount": 1,
+            "weightRatio": 0.2857142857142857
+          },
+          {
+            "name": "plastic-bar",
+            "amount": 1,
+            "weightRatio": 0.14285714285714285
+          },
+          {
+            "name": "light-oil-barrel",
+            "amount": 0.1,
+            "weightRatio": 0.2857142857142857
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -6752,7 +7502,44 @@
     "subgroup": "aquilo-processes",
     "stackSize": 100,
     "rocketCapacity": 200,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "quantum-processor",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "tungsten-carbide",
+            "amount": 1,
+            "weightRatio": 0.13953488372093023
+          },
+          {
+            "name": "processing-unit",
+            "amount": 1,
+            "weightRatio": 0.23255813953488372
+          },
+          {
+            "name": "superconductor",
+            "amount": 1,
+            "weightRatio": 0.06976744186046512
+          },
+          {
+            "name": "carbon-fiber",
+            "amount": 1,
+            "weightRatio": 0.13953488372093023
+          },
+          {
+            "name": "lithium-plate",
+            "amount": 2,
+            "weightRatio": 0.27906976744186046
+          },
+          {
+            "name": "fluoroketone-cold-barrel",
+            "amount": 0.2,
+            "weightRatio": 0.13953488372093023
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -6947,7 +7734,39 @@
     "subgroup": "terrain",
     "stackSize": 50,
     "rocketCapacity": 50,
-    "alternatives": []
+    "alternatives": [
+      {
+        "name": "foundation",
+        "yield": 1,
+        "ingredients": [
+          {
+            "name": "tungsten-plate",
+            "amount": 4,
+            "weightRatio": 0.21052631578947367
+          },
+          {
+            "name": "lithium-plate",
+            "amount": 4,
+            "weightRatio": 0.10526315789473684
+          },
+          {
+            "name": "carbon-fiber",
+            "amount": 4,
+            "weightRatio": 0.10526315789473684
+          },
+          {
+            "name": "stone",
+            "amount": 20,
+            "weightRatio": 0.5263157894736842
+          },
+          {
+            "name": "fluoroketone-cold-barrel",
+            "amount": 0.4,
+            "weightRatio": 0.05263157894736842
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "item",
@@ -7148,5 +7967,77 @@
         ]
       }
     ]
+  },
+  {
+    "type": "item",
+    "name": "water-barrel",
+    "subgroup": "barrel",
+    "stackSize": 50,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "sulfuric-acid-barrel",
+    "subgroup": "barrel",
+    "stackSize": 50,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "crude-oil-barrel",
+    "subgroup": "barrel",
+    "stackSize": 50,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "heavy-oil-barrel",
+    "subgroup": "barrel",
+    "stackSize": 50,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "light-oil-barrel",
+    "subgroup": "barrel",
+    "stackSize": 50,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "petroleum-gas-barrel",
+    "subgroup": "barrel",
+    "stackSize": 50,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "lubricant-barrel",
+    "subgroup": "barrel",
+    "stackSize": 50,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "fluoroketone-cold-barrel",
+    "subgroup": "barrel",
+    "stackSize": 50,
+    "rocketCapacity": 100,
+    "alternatives": []
+  },
+  {
+    "type": "item",
+    "name": "fluoroketone-hot-barrel",
+    "subgroup": "barrel",
+    "stackSize": 50,
+    "rocketCapacity": 100,
+    "alternatives": []
   }
 ]

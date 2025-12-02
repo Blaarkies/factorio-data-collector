@@ -1,9 +1,7 @@
 import type { EnrichedItem } from './enrich/type.ts';
 import { collectData } from './collect-data.ts';
 
-/**
- * Basic sanity tests to help development debugging
- */
+/** Basic sanity tests to help development debugging */
 
 (async () => {
   let enrichedItems = await collectData();
@@ -41,7 +39,7 @@ import { collectData } from './collect-data.ts';
   console.log('All tests passed');
 })();
 
-let correctRocketCaps = [
+let expectedRocketCaps = [
   ['flying-robot-frame', 150],
   ['electronic-circuit', 2000],
   ['repair-pack', 100],
@@ -55,6 +53,7 @@ let correctRocketCaps = [
   ['artillery-shell', 10],
   ['cliff-explosives', 20],
   ['artillery-turret', 5],
+  ['water-barrel', 100],
 ];
 
 function testItemsRocketCap(items: EnrichedItem[]): TestResult {
@@ -62,27 +61,31 @@ function testItemsRocketCap(items: EnrichedItem[]): TestResult {
     passed: [],
     failed: [],
   };
-  for (let test of correctRocketCaps) {
-    let [testName, testRc] = test as [string, number];
-    let testee = items.find(i => i.name === testName);
+  for (let expected of expectedRocketCaps) {
+    let [expectedName, expectedRc] = expected as [string, number];
+    let suspect = items.find(i => i.name === expectedName);
+    if (!suspect) {
+      results.failed.push([expectedName, `\n\tCould not find matching item`]);
+      continue;
+    }
 
-    let isPass = test[1] === testee.rocketCapacity;
+    let isPass = expected[1] === suspect.rocketCapacity;
 
     if (!isPass) {
       results.failed.push([
-        testName,
-        `\n\tExpected ${testRc}`
-        + `\n\tReceived ${testee.rocketCapacity}`,
+        expectedName,
+        `\n\tExpected ${expectedRc}`
+        + `\n\tReceived ${suspect.rocketCapacity}`,
       ]);
       continue;
     }
 
-    results.passed.push(testName);
+    results.passed.push(expectedName);
   }
   return results;
 }
 
-let correctIngredients = [
+let expectedIngredients = [
   ['cliff-explosives', [
     {name: 'explosives', amount: 10},
     {name: 'calcite', amount: 10},
@@ -100,6 +103,11 @@ let correctIngredients = [
     {name: 'processing-unit', amount: 5},
     {name: 'biter-egg', amount: 1}
   ]],
+  // ['sulfuric-acid-barrel', [
+  //   {name: 'sulfur', amount: 5},
+  //   {name: 'iron-plate', amount: 1},
+  //   {name: 'water', amount: 2},
+  // ]],
 ];
 
 function ingredientsToString(ingredients: {
@@ -122,28 +130,32 @@ function testItemsRecipe(items: EnrichedItem[]): TestResult {
     passed: [],
     failed: [],
   };
-  for (let test of correctIngredients) {
-    let [testName, testIngredients]
-      = test as [string, { name: string, amount: number }[]];
-    let testIngredientsString = ingredientsToString(testIngredients);
+  for (let expected of expectedIngredients) {
+    let [expectedName, expectedIngredients]
+      = expected as [string, { name: string, amount: number }[]];
+    let expectedIngredientsString = ingredientsToString(expectedIngredients);
 
-    let testee = items.find(i => i.name === testName);
-    let testeeIngredientsStrings = testee.alternatives
+    let suspect = items.find(i => i.name === expectedName);
+    if (!suspect) {
+      results.failed.push([expectedName, `\n\tCould not find matching item`]);
+      continue;
+    }
+    let suspectIngredientsStrings = suspect.alternatives
       .map(alt => ingredientsToString(alt.ingredients));
 
-    let isPass = testeeIngredientsStrings.some(ingString =>
-      testIngredientsString === ingString);
+    let isPass = suspectIngredientsStrings.some(ingString =>
+      expectedIngredientsString === ingString);
 
     if (!isPass) {
       results.failed.push([
-        testName,
-        `\n\tExpected ${testIngredientsString}`
-        + `\n\tReceived ${testeeIngredientsStrings.join('\n\t| ')}`,
+        expectedName,
+        `\n\tExpected ${expectedIngredientsString}`
+        + `\n\tReceived ${suspectIngredientsStrings.join('\n\t| ')}`,
       ]);
       continue;
     }
 
-    results.passed.push(testName);
+    results.passed.push(expectedName);
   }
   return results;
 }

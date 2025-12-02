@@ -184,7 +184,7 @@ function getAlternatives(recipes: FactorioRecipe[],
                          itemName: string,
                          itemNameMap: Map<string, FactorioItem>) {
   let alternatives: Alternative[] = recipes
-    // remove fluid alternatives
+    // For removing fluid alternatives that cannot be barreled
     .filter(r => r.ingredients.every(i => itemNameMap.has(i.name)))
     .map(recipe => {
       let results = recipe.results

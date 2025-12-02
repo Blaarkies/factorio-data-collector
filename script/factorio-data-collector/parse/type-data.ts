@@ -18,3 +18,7 @@ export type ValidProp =
   | 'temperature'
   | 'amount'
   | 'probability'
+
+  | 'base_color'
+  | 'flow_color'
+  | 'auto_barrel'
